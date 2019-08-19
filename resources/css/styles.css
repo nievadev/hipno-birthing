@@ -38,33 +38,42 @@ html {
     padding: 4px 0px;
 }
 
-.phone, .phone-number {
-    float: left;
-    margin: 3px -4px 0px 3px;
-}
-
-.phone, .email {
-    font-size: 90%;
-    margin-top: 4px;
-
-    float: left;
-}
-
-.phone-number, .email-address {
-    font-size: 80%;
-    float: left;
-}
-
-.info-phone, .info-email {
-    margin: 2px 2px;
+.phone, 
+.phone-number, 
+.email, 
+.email-address, 
+.info-phone, 
+.info-email {
     float: left;
     color: #ffffff;
 }
 
-.info-email {
-    margin-left: 30px;
+.phone,
+.email {
+    font-size: 90%;
+}
+
+.phone-number,
+.email-address {
+    font-size: 80%;
+}
+
+.phone, .phone-number {
+    margin: 4px -4px 0px 3px;
+}
+
+.email {
+    margin-top: 4px;
 }
 
 .email-address {
-    margin: 3px 0px;
+    margin-top: 3px;
+}
+
+.info-phone {
+    margin: 2px 2px;
+}
+
+.info-email {
+    margin: 2px 2px 2px 30px;
 }
