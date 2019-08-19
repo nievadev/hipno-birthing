@@ -1,0 +1,52 @@
+/* Colors
+ * d980fa <- Main color
+ * fbf2ff <- Very light pink color
+ * ffffff <- Bg color
+ */
+
+html {
+    background-color: #ffffff;
+    color: #555;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    text-rendering: optimizeLegibility;
+}
+
+.top-header {
+    background-color: #f1d2fd;
+
+    height: 30px;
+}
+
+.container {
+    height: inherit;
+    width: 56%;
+
+    margin: 0 auto;
+}
+
+.container p {
+    margin: 0;
+    padding: 4px 0px;
+}
+
+.phone, .phone-number {
+    color: #ffffff;
+    
+    float: left;
+
+    margin: 3px -4px 0px 3px;
+}
+
+.phone {
+    font-size: 90%;
+
+    margin-top: 4px;
+}
+
+.phone-number {
+    font-size: 80%;
+}
