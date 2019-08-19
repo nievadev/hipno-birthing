@@ -4,6 +4,11 @@
  * ffffff <- Bg color
  */
 
+.clearfix::after {
+    content: "";
+    clear: both;
+}
+
 html {
     background-color: #ffffff;
     color: #555;
@@ -34,19 +39,32 @@ html {
 }
 
 .phone, .phone-number {
-    color: #ffffff;
-    
     float: left;
-
     margin: 3px -4px 0px 3px;
 }
 
-.phone {
+.phone, .email {
     font-size: 90%;
-
     margin-top: 4px;
+
+    float: left;
 }
 
-.phone-number {
+.phone-number, .email-address {
     font-size: 80%;
+    float: left;
+}
+
+.info-phone, .info-email {
+    margin: 2px 2px;
+    float: left;
+    color: #ffffff;
+}
+
+.info-email {
+    margin-left: 30px;
+}
+
+.email-address {
+    margin: 3px 0px;
 }
