@@ -66,8 +66,12 @@ html {
     margin-top: 4px;
 }
 
-.email-address {
+.email-address:active, .email-address:link {
+    display: inline-block;
+
     margin-top: 3px;
+
+    text-decoration: none;
 }
 
 .info-phone {
