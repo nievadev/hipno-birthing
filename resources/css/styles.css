@@ -32,14 +32,14 @@ a {
     height: 30px;
 }
 
-.container {
+.top-header-container {
     height: inherit;
     width: 56%;
 
     margin: 0 auto;
 }
 
-.container p {
+.top-header-container p {
     margin: 0;
     padding: 4px 0px;
 }
