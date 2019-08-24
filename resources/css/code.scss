@@ -1,0 +1,91 @@
+$topHeader-color: #e8b1fc;
+
+html {
+    background-color: #ffffff;
+    color: #000000;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.top-header {
+    height: 30px;
+    width: 100%;
+
+    background-color: $topHeader-color;
+
+    .container-topHeader {
+        display: flex;
+        justify-content: space-between;
+
+        height: inherit;
+        width: 55%;
+
+        margin: 0 auto;
+
+        color: #ffffff;
+
+        .container-info {
+            display: flex;
+
+            .phone {
+                display: flex;
+                padding-top: 2px;
+
+                .phone-icon {
+                    margin: 6px 0px;
+
+                    font-size: 70%;
+                }
+
+                .phone-info {
+                    display: inline-block;
+
+                    font-size: 80%;
+
+                    margin: 4px 0px;
+                }
+            }
+
+            .email {
+                display: flex;
+
+                padding-top: 2px;
+                
+                margin-left: 15px;
+
+                .email-icon {
+                    margin: 6px 0px;
+
+                    font-size: 80%;
+                }
+
+                .email-info:link, .email-info:visited {
+                    color: #ffffff;
+
+                    font-size: 80%;
+                    
+                    margin: 3px 0px;
+                }
+            }
+        }
+
+        .container-icons {
+            display: flex;
+            justify-content: flex-end;
+
+            .fb, .tw, .ig {
+                color: #ffffff;
+                margin: 3px 0px 0px 10px;
+            }
+        }
+    }
+}
