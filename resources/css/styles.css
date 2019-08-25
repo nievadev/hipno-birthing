@@ -17,7 +17,13 @@ a {
   width: 100%;
   background-color: #e8b1fc;
 }
-.top-header .container-topHeader {
+
+@media only screen and (max-width: 600px) {
+  .top-header {
+    display: none;
+  }
+}
+.container-topHeader {
   display: flex;
   justify-content: space-between;
   height: inherit;
@@ -25,41 +31,41 @@ a {
   margin: 0 auto;
   color: #ffffff;
 }
-.top-header .container-topHeader .container-info {
+.container-topHeader .container-info {
   display: flex;
 }
-.top-header .container-topHeader .container-info .phone {
+.container-topHeader .container-info .phone {
   display: flex;
   padding-top: 2px;
 }
-.top-header .container-topHeader .container-info .phone .phone-icon {
+.container-topHeader .container-info .phone .phone-icon {
   margin: 6px 0px;
   font-size: 70%;
 }
-.top-header .container-topHeader .container-info .phone .phone-info {
+.container-topHeader .container-info .phone .phone-info {
   display: inline-block;
   font-size: 80%;
   margin: 4px 0px;
 }
-.top-header .container-topHeader .container-info .email {
+.container-topHeader .container-info .email {
   display: flex;
   padding-top: 2px;
   margin-left: 15px;
 }
-.top-header .container-topHeader .container-info .email .email-icon {
+.container-topHeader .container-info .email .email-icon {
   margin: 6px 0px;
   font-size: 80%;
 }
-.top-header .container-topHeader .container-info .email .email-info:link, .top-header .container-topHeader .container-info .email .email-info:visited {
+.container-topHeader .container-info .email .email-info:link, .container-topHeader .container-info .email .email-info:visited {
   color: #ffffff;
   font-size: 80%;
   margin: 3px 0px;
 }
-.top-header .container-topHeader .container-icons {
+.container-topHeader .container-icons {
   display: flex;
   justify-content: flex-end;
 }
-.top-header .container-topHeader .container-icons .fb, .top-header .container-topHeader .container-icons .tw, .top-header .container-topHeader .container-icons .ig {
+.container-topHeader .container-icons .fb, .container-topHeader .container-icons .tw, .container-topHeader .container-icons .ig {
   color: #ffffff;
   margin: 3px 0px 0px 10px;
 }
