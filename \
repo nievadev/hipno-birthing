@@ -1,10 +1,6 @@
 $topHeader-color: #e8b1fc;
-
-$header-bgColor: #ffffff;
-
-$navBar-color: #7f7f7f; 
-$navBar-colorPicked: #c8a2c8 ; 
-
+$header-color: #ffffff;
+$navBar-color: #c8a2c8;
 $container-width: 70%;
 
 html {
@@ -108,26 +104,17 @@ header {
 
     padding: 20px 0px;
 
-    background-color: $header-bgColor;
-
     nav {
         display: flex;
         align-items: center;
 
         ul {
             display: flex;
-            flex-wrap: wrap;
 
             li {
-                a:visited, a:link {
+                a {
                     padding: 10px 20px;
                     color: $navBar-color;
-
-                    transition: color 0.2s;
-                }
-
-                a:hover, a:active {
-                    color: $navBar-colorPicked;
                 }
             }
         }

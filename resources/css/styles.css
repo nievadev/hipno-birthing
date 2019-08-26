@@ -12,6 +12,15 @@ a {
   display: inline-block;
 }
 
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .top-header {
   height: 30px;
   width: 100%;
@@ -22,8 +31,6 @@ a {
   display: flex;
   justify-content: space-between;
   height: inherit;
-  width: 55%;
-  margin: 0 auto;
   color: #ffffff;
 }
 .container-topHeader .container-info {
@@ -64,7 +71,30 @@ a {
   margin: 3px 0px 0px 10px;
 }
 
-@media only screen and (max-width: 856px) {
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  background-color: #ffffff;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav ul li a:visited, header nav ul li a:link {
+  padding: 10px 20px;
+  color: #7f7f7f;
+  transition: color 0.2s;
+}
+header nav ul li a:hover, header nav ul li a:active {
+  color: #c8a2c8;
+}
+
+@media only screen and (max-width: 682px) {
   .container-topHeader {
     width: 90%;
   }
@@ -74,7 +104,7 @@ a {
     display: flex;
   }
 }
-@media only screen and (max-width: 519px) {
+@media only screen and (max-width: 533px) {
   .phone {
     display: none;
   }
