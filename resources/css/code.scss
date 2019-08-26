@@ -38,7 +38,6 @@ a {
         display: flex;
 
         .phone {
-            display: flex;
             padding-top: 2px;
 
             .phone-icon {
@@ -87,5 +86,31 @@ a {
             color: #ffffff;
             margin: 3px 0px 0px 10px;
         }
+    }
+}
+
+@media only screen and (max-width: 856px) {
+    .container-topHeader {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1921px) {
+    .phone {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    .phone {
+        display: none;
+    }
+
+    .email-info {
+        display: none;
+    }
+
+    .container-topHeader {
+        justify-content: center;
     }
 }
