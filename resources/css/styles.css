@@ -35,40 +35,31 @@ ul {
 }
 .container-topHeader .container-info {
   display: flex;
-}
-.container-topHeader .container-info .phone {
-  padding-top: 2px;
-}
-.container-topHeader .container-info .phone .phone-icon {
-  margin: 6px 0px;
-  font-size: 70%;
+  align-items: center;
 }
 .container-topHeader .container-info .phone .phone-info {
   display: inline-block;
-  font-size: 80%;
-  margin: 4px 0px;
+  font-size: 75%;
 }
 .container-topHeader .container-info .email {
   display: flex;
-  padding-top: 2px;
   margin-left: 15px;
 }
 .container-topHeader .container-info .email .email-icon {
-  margin: 6px 0px;
-  font-size: 80%;
+  margin-top: 1px;
 }
 .container-topHeader .container-info .email .email-info:link, .container-topHeader .container-info .email .email-info:visited {
   color: #ffffff;
-  font-size: 80%;
-  margin: 3px 0px;
+  font-size: 78%;
 }
 .container-topHeader .container-icons {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .container-topHeader .container-icons .fb, .container-topHeader .container-icons .tw, .container-topHeader .container-icons .ig {
   color: #ffffff;
-  margin: 3px 0px 0px 10px;
+  margin-left: 10px;
 }
 
 header {
@@ -90,6 +81,7 @@ header nav ul li a:visited, header nav ul li a:link {
   color: #7f7f7f;
   transition: color 0.2s;
 }
+header nav ul li .picked-option:visited, header nav ul li .picked-option:link,
 header nav ul li a:hover, header nav ul li a:active {
   color: #c8a2c8;
 }
@@ -99,7 +91,7 @@ header nav ul li a:hover, header nav ul li a:active {
     width: 90%;
   }
 }
-@media only screen and (max-width: 1921px) {
+@media only screen and (max-width: 8000px) {
   .phone {
     display: flex;
   }

@@ -49,44 +49,29 @@ ul {
 
     .container-info {
         display: flex;
+        align-items: center;
 
         .phone {
-            padding-top: 2px;
-
-            .phone-icon {
-                margin: 6px 0px;
-
-                font-size: 70%;
-            }
-
             .phone-info {
                 display: inline-block;
 
-                font-size: 80%;
-
-                margin: 4px 0px;
+                font-size: 75%;
             }
         }
 
         .email {
             display: flex;
 
-            padding-top: 2px;
-            
             margin-left: 15px;
 
             .email-icon {
-                margin: 6px 0px;
-
-                font-size: 80%;
+                margin-top: 1px;
             }
 
             .email-info:link, .email-info:visited {
                 color: #ffffff;
 
-                font-size: 80%;
-                
-                margin: 3px 0px;
+                font-size: 78%;
             }
         }
     }
@@ -94,10 +79,12 @@ ul {
     .container-icons {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
 
         .fb, .tw, .ig {
             color: #ffffff;
-            margin: 3px 0px 0px 10px;
+            
+            margin-left: 10px;
         }
     }
 }
@@ -126,6 +113,8 @@ header {
                     transition: color 0.2s;
                 }
 
+
+                .picked-option:visited, .picked-option:link,
                 a:hover, a:active {
                     color: $navBar-colorPicked;
                 }
@@ -140,7 +129,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 1921px) {
+@media only screen and (max-width: 8000px) {
     .phone {
         display: flex;
     }
