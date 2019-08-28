@@ -107,7 +107,7 @@ header {
 
             li {
                 a:visited, a:link {
-                    padding: 10px 20px;
+                    padding: 10px 0px 10px 20px;
                     color: $navBar-color;
 
                     transition: color 0.2s;
@@ -117,6 +117,16 @@ header {
                 .picked-option:visited, .picked-option:link,
                 a:hover, a:active {
                     color: $navBar-colorPicked;
+                }
+                
+                .consequence-dropdown {
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 1;
+
+                    padding: 0;
+
+                    position: absolute;
                 }
             }
         }

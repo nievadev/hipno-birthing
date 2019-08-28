@@ -77,13 +77,20 @@ header nav ul {
   flex-wrap: wrap;
 }
 header nav ul li a:visited, header nav ul li a:link {
-  padding: 10px 20px;
+  padding: 10px 0px 10px 20px;
   color: #7f7f7f;
   transition: color 0.2s;
 }
 header nav ul li .picked-option:visited, header nav ul li .picked-option:link,
 header nav ul li a:hover, header nav ul li a:active {
   color: #c8a2c8;
+}
+header nav ul li .consequence-dropdown {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
 }
 
 @media only screen and (max-width: 682px) {
