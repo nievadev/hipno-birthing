@@ -92,10 +92,20 @@ ul {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    padding: 20px 0px;
+    padding: 10px 0px;
 
     background-color: $header-bgColor;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 80%;
+        }
+    }
 
     nav {
         display: flex;
@@ -104,13 +114,28 @@ header {
         ul {
             display: flex;
             flex-wrap: wrap;
+            padding: 0;
 
             li {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    position: absolute;
+
+                    padding: 0;
+
+                }
+
+                ul li {
+                    display: none;
+                }
+
                 a:visited, a:link {
-                    padding: 10px 0px 10px 20px;
+                    padding: 10px 20px;
                     color: $navBar-color;
 
-                    transition: color 0.2s;
+                    transition: color 0.4s;
                 }
 
 
@@ -118,15 +143,11 @@ header {
                 a:hover, a:active {
                     color: $navBar-colorPicked;
                 }
-                
-                .consequence-dropdown {
-                    display: flex;
-                    flex-direction: column;
-                    opacity: 1;
+            }
 
-                    padding: 0;
-
-                    position: absolute;
+            li:hover {
+                ul li {
+                    display: block;
                 }
             }
         }
@@ -156,5 +177,23 @@ header {
 
     .container-topHeader {
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1358px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1056px) {
+    header nav ul li a {
+        padding: 10px 10px !important;
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    header nav ul {
+        display: none;
     }
 }

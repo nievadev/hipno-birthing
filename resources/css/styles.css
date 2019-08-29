@@ -65,8 +65,16 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px;
+  align-items: center;
+  padding: 10px 0px;
   background-color: #ffffff;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+}
+header .logo img {
+  width: 80%;
 }
 header nav {
   display: flex;
@@ -75,22 +83,28 @@ header nav {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+}
+header nav ul li ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 0;
+}
+header nav ul li ul li {
+  display: none;
 }
 header nav ul li a:visited, header nav ul li a:link {
-  padding: 10px 0px 10px 20px;
+  padding: 10px 20px;
   color: #7f7f7f;
-  transition: color 0.2s;
+  transition: color 0.4s;
 }
 header nav ul li .picked-option:visited, header nav ul li .picked-option:link,
 header nav ul li a:hover, header nav ul li a:active {
   color: #c8a2c8;
 }
-header nav ul li .consequence-dropdown {
-  display: flex;
-  flex-direction: column;
-  opacity: 1;
-  padding: 0;
-  position: absolute;
+header nav ul li:hover ul li {
+  display: block;
 }
 
 @media only screen and (max-width: 682px) {
@@ -114,6 +128,21 @@ header nav ul li .consequence-dropdown {
 
   .container-topHeader {
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 1358px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1056px) {
+  header nav ul li a {
+    padding: 10px 10px !important;
+  }
+}
+@media only screen and (max-width: 968px) {
+  header nav ul {
+    display: none;
   }
 }
 
