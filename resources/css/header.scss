@@ -1,0 +1,91 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0px;
+
+    background-color: $header-bgColor;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        .menu-btn {
+            width: 150px;
+
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 10px 30px;
+            margin: 20px 0px;
+
+            color: $navBar-colorPicked;
+
+            border: 1px solid $navBar-colorPicked;
+            border-radius: 5px;
+
+            .menu {
+                display: block;
+            }
+
+            transition: background-color 0.3s;
+        }
+
+        .menu-btn:hover {
+            background-color: rgba(0, 0, 0, .12);
+            
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+
+            li {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    position: absolute;
+
+                    padding: 0;
+
+                }
+
+                ul li {
+                    display: none;
+                }
+
+                a:visited, a:link {
+                    padding: 10px 20px;
+                    color: $navBar-color;
+
+                    transition: color 0.4s;
+                }
+
+
+                .picked-option:visited, .picked-option:link,
+                a:hover, a:active {
+                    color: $navBar-colorPicked;
+                }
+            }
+
+            li:hover {
+                ul li {
+                    display: block;
+                }
+            }
+        }
+    }
+}

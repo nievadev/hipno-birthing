@@ -1,0 +1,56 @@
+.top-header {
+    height: 30px;
+    width: 100%;
+
+    background-color: $topHeader-color;
+}
+
+.container-topHeader {
+    display: flex;
+    justify-content: space-between;
+
+    height: inherit;
+
+    color: #ffffff;
+
+    .container-info {
+        display: flex;
+        align-items: center;
+
+        .phone {
+            .phone-info {
+                display: inline-block;
+
+                font-size: 75%;
+            }
+        }
+
+        .email {
+            display: flex;
+
+            margin-left: 15px;
+
+            .email-icon {
+                margin-top: 1px;
+            }
+
+            .email-info:link, .email-info:visited {
+                color: #ffffff;
+
+                font-size: 78%;
+            }
+        }
+    }
+
+    .container-icons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .fb, .tw, .ig {
+            color: #ffffff;
+            
+            margin-left: 10px;
+        }
+    }
+}
