@@ -1,0 +1,47 @@
+.list-mobile {
+    flex-direction: column;
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+
+    li {
+        width: 100%;
+
+        a:link, a:visited {
+            color: $navBar-color;
+
+            padding: 0px 20px 10px 20px;
+
+            transition: color 0.2s;
+        }
+
+        a:hover, a:active {
+            color: $navBar-colorPicked;
+        }
+
+        .hypno-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0px 20px 10px 20px;
+
+            color: $navBar-color;
+
+            transition: color 0.2s;
+        }
+
+        .hypno-label:hover {
+            cursor: pointer;
+
+            color: $navBar-colorPicked;
+        }
+
+        .list-dropdown {
+            flex-direction: column;
+
+            padding: 0;
+        }
+    }
+}

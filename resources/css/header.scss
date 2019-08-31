@@ -21,7 +21,7 @@ header {
         align-items: center;
 
         .menu-btn {
-            width: 150px;
+            width: 90px;
 
             justify-content: space-between;
             align-items: center;
@@ -38,11 +38,11 @@ header {
                 display: block;
             }
 
-            transition: background-color 0.3s;
+            transition: background-color 0.2s linear;
         }
 
         .menu-btn:hover {
-            background-color: rgba(0, 0, 0, .12);
+            background-color: #e0e0e0;
             
             cursor: pointer;
         }

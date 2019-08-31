@@ -32,6 +32,19 @@ ul {
     margin: 0 auto;
 }
 
+.list-mobile {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.list-dropdown {
+    display: none;
+}
+
 @import "top_header";
 @import "header";
 @import "media_queries";
+@import "list_mobile";
