@@ -13,7 +13,8 @@ header {
 
         img {
             width: 200px;
-            height: auto;
+            height: 100%;
+            align-self: center;
         }
     }
 
@@ -43,7 +44,7 @@ header {
         }
 
         .menu-btn:hover {
-            background-color: #e0e0e0;
+            background-color: rgba(242, 210, 253, .9);
             
             cursor: pointer;
         }

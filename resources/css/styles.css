@@ -95,7 +95,8 @@ header .logo {
 }
 header .logo img {
   width: 200px;
-  height: auto;
+  height: 100%;
+  align-self: center;
 }
 header nav {
   display: flex;
@@ -116,7 +117,7 @@ header nav .menu-btn .menu {
   display: block;
 }
 header nav .menu-btn:hover {
-  background-color: #e0e0e0;
+  background-color: rgba(242, 210, 253, 0.9);
   cursor: pointer;
 }
 header nav ul {
