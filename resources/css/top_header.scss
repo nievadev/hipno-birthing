@@ -30,7 +30,9 @@
 
             margin-left: 15px;
 
-            .email-icon {
+            .email-icon:link, .email-icon:visited {
+                color: #ffffff;
+
                 margin-top: 1px;
             }
 
