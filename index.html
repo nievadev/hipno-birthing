@@ -85,7 +85,7 @@
                 <svg class="menu-icon" height="16px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ul" class="svg-inline--fa fa-list-ul fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg>
                 <span class="menu">Menu</span>
             </label>
-            <input class="checkbox-list" id="checkboxList" onclick="showMobileBar('checkboxList')" type="checkbox">
+            <input class="checkbox-list" id="checkboxList" onclick="showMobileBar('checkboxList', 'listMobile')" type="checkbox">
             <ul>
                 <li><a class="picked-option" href="#">Home</a></li>
                 <li><a href="#">What is hypnobirthing mind?</a>
@@ -108,7 +108,7 @@
                 <span class="hypno">Hypnobirthing</span>
                 <svg id="hypnoIcon" class="hypno-icon" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg>
             </label>
-            <input onclick="showDropdownList()" class="checkbox-dropdown" id="checkboxDropdown" type="checkbox">
+            <input onclick="showMobileBar('checkboxDropdown', 'listDropdown')" class="checkbox-dropdown" id="checkboxDropdown" type="checkbox">
             <ul class="list-dropdown" id="listDropdown">
                 <li><a href="#">What is hypnobirthing mind?</a></li>
                 <li><a href="#">Benefits</a></li>
@@ -119,10 +119,9 @@
         <li><a href="#">Book a session</a></li>
         <li><a href="#">About me</a></li>
         <li>
-            <label class="hypno-close" for="checkboxClose">
+            <label class="hypno-close" for="checkboxList">
                 <span class="close">Close</span>
             </label>
-            <input id="checkboxClose" onclick="showMobileBar('checkboxClose')" class="checkbox-close" type="checkbox">
         </li>
     </ul>
 
