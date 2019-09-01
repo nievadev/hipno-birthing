@@ -1,7 +1,7 @@
-function showMobileBar() {
-    var checkboxList = document.getElementById("checkboxList");
+function showMobileBar(checkboxId) {
+    var checkbox = document.getElementById(checkboxId);
 
-    if (checkboxList.checked) {
+    if (checkbox.checked) {
         document.getElementById("listMobile").style.display = "flex";
     }
 
@@ -22,3 +22,15 @@ function showDropdownList() {
         listDropdown.style.display = "none";
     }
 }
+
+function disappearDropdownMenu(screenSize) {
+    if (screenSize.matches) {
+        document.getElementById("checkboxList").checked = false;
+    }
+
+    showMobileBar("checkboxList");
+}
+
+var mediaQuery = window.matchMedia("(min-width: 1056px)");
+mediaQuery.addListener(disappearDropdownMenu);
+disappearDropdownMenu(mediaQuery);

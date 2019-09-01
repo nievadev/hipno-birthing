@@ -20,7 +20,7 @@
             color: $navBar-colorPicked;
         }
 
-        .hypno-label {
+        .hypno-label, label {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -32,7 +32,7 @@
             transition: color 0.2s;
         }
 
-        .hypno-label:hover {
+        .hypno-label:hover, label:hover {
             cursor: pointer;
 
             color: $navBar-colorPicked;

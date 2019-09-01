@@ -83,7 +83,7 @@
                 <svg class="menu-icon" height="16px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ul" class="svg-inline--fa fa-list-ul fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg>
                 <span class="menu">Menu</span>
             </label>
-            <input class="checkbox-list" id="checkboxList" onclick="showMobileBar()" type="checkbox">
+            <input class="checkbox-list" id="checkboxList" onclick="showMobileBar('checkboxList')" type="checkbox">
             <ul>
                 <li><a class="picked-option" href="#">Home</a></li>
                 <li><a href="#">What is hypnobirthing mind?</a>
@@ -116,6 +116,12 @@
         </li>
         <li><a href="#">Book a session</a></li>
         <li><a href="#">About me</a></li>
+        <li>
+            <label class="hypno-close" for="checkboxClose">
+                <span class="close">Close</span>
+            </label>
+            <input id="checkboxClose" onclick="showMobileBar('checkboxClose')" class="checkbox-close" type="checkbox">
+        </li>
     </ul>
 
     <script src="./resources/js/main.js"></script>
