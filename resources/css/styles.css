@@ -195,6 +195,10 @@ header nav ul li:hover ul li {
   .logo {
     margin-top: 10px;
   }
+
+  .menu-btn {
+    display: none;
+  }
 }
 .list-mobile {
   flex-direction: column;

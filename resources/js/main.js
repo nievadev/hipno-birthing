@@ -31,6 +31,10 @@ function disappearDropdownMenu(screenSize) {
     showMobileBar("checkboxList");
 }
 
-var mediaQuery = window.matchMedia("(min-width: 1056px)");
-mediaQuery.addListener(disappearDropdownMenu);
-disappearDropdownMenu(mediaQuery);
+var tabletSize = window.matchMedia("(min-width: 1056px)");
+tabletSize.addListener(disappearDropdownMenu);
+disappearDropdownMenu(tabletSize);
+
+var mobileSize = window.matchMedia("(max-width: 533px)");
+mobileSize.addListener(disappearDropdownMenu);
+disappearDropdownMenu(mobileSize);
