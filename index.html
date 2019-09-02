@@ -7,9 +7,6 @@
     <!-- Developer: Martin Nieva (nievadev in github) -->
     <!-- Some icons were grabbed from Font Awesome and Google fonts "Material Icons" (https://material.io/resources/icons/?style=baseline). Very cool icons, thanks!! -->
 
-    <!-- Make the webpage work fine in all browsers -->
-    <link rel="stylesheet" href="base/css/normalize.css">
-
     <!-- Load google font DM Sans -->
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet"> 
 
@@ -101,15 +98,15 @@
         </nav>
     </header>
 
-    <ul class="list-mobile" id="listMobile"> 
+    <ul id="listMobile"> 
         <li><a href="#">Home</a></li>
         <li>
             <label for="checkboxDropdown">
                 <span class="hypno">Hypnobirthing</span>
                 <svg id="hypnoIcon" class="hypno-icon" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg>
             </label>
-            <input onclick="showMobileBar('checkboxDropdown', 'listDropdown')" class="checkbox-dropdown" id="checkboxDropdown" type="checkbox">
-            <ul class="list-dropdown" id="listDropdown">
+            <input onclick="showMobileBar('checkboxDropdown', 'listDropdown')" id="checkboxDropdown" type="checkbox">
+            <ul id="listDropdown">
                 <li><a href="#">What is hypnobirthing mind?</a></li>
                 <li><a href="#">Benefits</a></li>
                 <li><a href="#">Frequently Asked Questions</a></li>

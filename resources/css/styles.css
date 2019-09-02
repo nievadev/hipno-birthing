@@ -7,6 +7,10 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -21,7 +25,7 @@ ul {
   margin: 0 auto;
 }
 
-.list-mobile {
+#listMobile {
   display: none;
 }
 
@@ -29,8 +33,20 @@ input[type=checkbox] {
   display: none;
 }
 
-.list-dropdown {
+#listDropdown {
   display: none;
+}
+
+.test {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+}
+
+.another-test {
+  background-color: blue;
+  width: 30px;
+  height: 30px;
 }
 
 .top-header {
@@ -63,6 +79,7 @@ input[type=checkbox] {
 }
 .container-topHeader .container-info .email .email-info:link, .container-topHeader .container-info .email .email-info:visited {
   color: #ffffff;
+  margin-top: 2px;
   font-size: 78%;
 }
 .container-topHeader .container-icons {
@@ -193,24 +210,24 @@ header nav ul li:hover ul li {
     display: none;
   }
 }
-.list-mobile {
+#listMobile {
   flex-direction: column;
   text-align: center;
   padding: 0;
   margin: 0;
 }
-.list-mobile li {
+#listMobile li {
   width: 100%;
 }
-.list-mobile li a:link, .list-mobile li a:visited {
+#listMobile li a:link, #listMobile li a:visited {
   color: #7f7f7f;
   padding: 0px 20px 10px 20px;
   transition: color 0.2s;
 }
-.list-mobile li a:hover, .list-mobile li a:active {
+#listMobile li a:hover, #listMobile li a:active {
   color: #c8a2c8;
 }
-.list-mobile li label {
+#listMobile li label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,22 +235,22 @@ header nav ul li:hover ul li {
   color: #7f7f7f;
   transition: color 0.2s;
 }
-.list-mobile li label .close {
+#listMobile li label .close {
   color: #f55f55;
   transition: color 0.2s;
 }
-.list-mobile li label .close:hover {
+#listMobile li label .close:hover {
   color: #f88f88;
 }
-.list-mobile li label:hover {
+#listMobile li label:hover {
   cursor: pointer;
   color: #c8a2c8;
 }
-.list-mobile li .list-dropdown {
+#listMobile li #listDropdown {
   flex-direction: column;
   padding: 0;
 }
-.list-mobile li ul {
+#listMobile li ul {
   margin-left: 50%;
   text-align: left;
 }

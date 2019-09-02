@@ -18,6 +18,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
@@ -32,7 +36,7 @@ ul {
     margin: 0 auto;
 }
 
-.list-mobile {
+#listMobile {
     display: none;
 }
 
@@ -40,8 +44,20 @@ input[type="checkbox"] {
     display: none;
 }
 
-.list-dropdown {
+#listDropdown {
     display: none;
+}
+
+.test {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+}
+
+.another-test {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
 }
 
 @import "top_header";
