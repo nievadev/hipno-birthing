@@ -33,18 +33,20 @@ header {
 
             color: $navBar-colorPicked;
 
-            border: 1px solid $navBar-colorPicked;
             border-radius: 5px;
 
             .menu {
                 display: block;
             }
 
-            transition: background-color 0.2s linear;
+            transition: background-color 0.2s, border-bottom 0.2s;
+
+            border-bottom: 1px solid transparent;
         }
 
         .menu-btn:hover {
-            background-color: rgba(242, 210, 253, .9);
+            background-color: rgba(242, 210, 253, .8);
+            border-bottom: 1px solid $navBar-colorPicked;
             
             cursor: pointer;
         }

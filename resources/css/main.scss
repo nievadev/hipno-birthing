@@ -48,18 +48,6 @@ input[type="checkbox"] {
     display: none;
 }
 
-.test {
-    background-color: red;
-    width: 30px;
-    height: 30px;
-}
-
-.another-test {
-    background-color: blue;
-    width: 30px;
-    height: 30px;
-}
-
 @import "top_header";
 @import "header";
 @import "media_queries";

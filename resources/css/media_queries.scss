@@ -31,16 +31,22 @@
 }
 
 @media only screen and (max-width: 533px) {
-    .phone {
+    .phone, .menu-btn, .email-info {
         display: none;
     }
 
-    .email-info {
-        display: none;
+    .email {
+        margin: 0;
+    }
+
+    .email-icon, .fb, .ig, .tw {
+        margin: 0px 6px;
+        padding: 0;
     }
 
     .container-topHeader {
-        justify-content: center;
+        margin: 0;
+        width: 100%;
     }
 
     header {
@@ -51,7 +57,33 @@
         margin-top: 10px;
     }
 
-    .menu-btn {
+    .container-whole-info {
+        justify-content: center;
+    }
+
+    .top-header {
+        height: 50px;
+    }
+
+    .mobile-button-icon {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 533px) {
+    .email {
+        margin-left: 15px;
+    }
+
+    .fb, .tw, .ig {
+        margin-left: 10px;
+    }
+
+    .container-whole-info {
+        justify-content: space-between;
+    }
+
+    .mobile-button-icon {
         display: none;
     }
 }

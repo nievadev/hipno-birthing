@@ -37,18 +37,6 @@ input[type=checkbox] {
   display: none;
 }
 
-.test {
-  background-color: red;
-  width: 30px;
-  height: 30px;
-}
-
-.another-test {
-  background-color: blue;
-  width: 30px;
-  height: 30px;
-}
-
 .top-header {
   height: 30px;
   width: 100%;
@@ -58,38 +46,49 @@ input[type=checkbox] {
 .container-topHeader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: inherit;
   color: #ffffff;
 }
-.container-topHeader .container-info {
+.container-topHeader label {
   display: flex;
   align-items: center;
 }
-.container-topHeader .container-info .phone .phone-info {
+.container-topHeader label .mobile-button-icon {
+  padding: 4px;
+  height: 30px;
+}
+.container-topHeader .container-whole-info {
+  display: flex;
+  width: 100%;
+}
+.container-topHeader .container-whole-info .container-info {
+  display: flex;
+  align-items: center;
+}
+.container-topHeader .container-whole-info .container-info .phone .phone-info {
   display: inline-block;
   font-size: 75%;
 }
-.container-topHeader .container-info .email {
+.container-topHeader .container-whole-info .container-info .email {
   display: flex;
-  margin-left: 15px;
 }
-.container-topHeader .container-info .email .email-icon:link, .container-topHeader .container-info .email .email-icon:visited {
+.container-topHeader .container-whole-info .container-info .email .email-icon:link, .container-topHeader .container-whole-info .container-info .email .email-icon:visited {
   color: #ffffff;
   margin-top: 1px;
 }
-.container-topHeader .container-info .email .email-info:link, .container-topHeader .container-info .email .email-info:visited {
+.container-topHeader .container-whole-info .container-info .email .email-info:link, .container-topHeader .container-whole-info .container-info .email .email-info:visited {
   color: #ffffff;
   margin-top: 2px;
   font-size: 78%;
 }
-.container-topHeader .container-icons {
+.container-topHeader .container-whole-info .container-icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.container-topHeader .container-icons .fb, .container-topHeader .container-icons .tw, .container-topHeader .container-icons .ig {
+.container-topHeader .container-whole-info .container-icons .fb, .container-topHeader .container-whole-info .container-icons .tw, .container-topHeader .container-whole-info .container-icons .ig {
   color: #ffffff;
-  margin-left: 10px;
 }
 
 header {
@@ -119,15 +118,16 @@ header nav .menu-btn {
   padding: 10px 30px;
   margin: 20px 0px;
   color: #c8a2c8;
-  border: 1px solid #c8a2c8;
   border-radius: 5px;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.2s, border-bottom 0.2s;
+  border-bottom: 1px solid transparent;
 }
 header nav .menu-btn .menu {
   display: block;
 }
 header nav .menu-btn:hover {
-  background-color: rgba(242, 210, 253, 0.9);
+  background-color: rgba(242, 210, 253, 0.8);
+  border-bottom: 1px solid #c8a2c8;
   cursor: pointer;
 }
 header nav ul {
@@ -186,16 +186,22 @@ header nav ul li:hover ul li {
   }
 }
 @media only screen and (max-width: 533px) {
-  .phone {
+  .phone, .menu-btn, .email-info {
     display: none;
   }
 
-  .email-info {
-    display: none;
+  .email {
+    margin: 0;
+  }
+
+  .email-icon, .fb, .ig, .tw {
+    margin: 0px 6px;
+    padding: 0;
   }
 
   .container-topHeader {
-    justify-content: center;
+    margin: 0;
+    width: 100%;
   }
 
   header {
@@ -206,7 +212,32 @@ header nav ul li:hover ul li {
     margin-top: 10px;
   }
 
-  .menu-btn {
+  .container-whole-info {
+    justify-content: center;
+  }
+
+  .top-header {
+    height: 50px;
+  }
+
+  .mobile-button-icon {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 533px) {
+  .email {
+    margin-left: 15px;
+  }
+
+  .fb, .tw, .ig {
+    margin-left: 10px;
+  }
+
+  .container-whole-info {
+    justify-content: space-between;
+  }
+
+  .mobile-button-icon {
     display: none;
   }
 }

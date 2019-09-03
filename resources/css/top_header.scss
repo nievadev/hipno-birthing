@@ -8,53 +8,65 @@
 .container-topHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     height: inherit;
 
     color: #ffffff;
 
-    .container-info {
+    label {
         display: flex;
         align-items: center;
 
-        .phone {
-            .phone-info {
-                display: inline-block;
-
-                font-size: 75%;
-            }
-        }
-
-        .email {
-            display: flex;
-
-            margin-left: 15px;
-
-            .email-icon:link, .email-icon:visited {
-                color: #ffffff;
-
-                margin-top: 1px;
-            }
-
-            .email-info:link, .email-info:visited {
-                color: #ffffff;
-
-                margin-top: 2px;
-
-                font-size: 78%;
-            }
+        .mobile-button-icon {
+            padding: 4px;
+            height: 30px;
         }
     }
 
-    .container-icons {
+    .container-whole-info {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        width: 100%;
 
-        .fb, .tw, .ig {
-            color: #ffffff;
-            
-            margin-left: 10px;
+        .container-info {
+            display: flex;
+            align-items: center;
+
+            .phone {
+                .phone-info {
+                    display: inline-block;
+
+                    font-size: 75%;
+                }
+            }
+
+            .email {
+                display: flex;
+
+                .email-icon:link, .email-icon:visited {
+                    color: #ffffff;
+
+                    margin-top: 1px;
+                }
+
+                .email-info:link, .email-info:visited {
+                    color: #ffffff;
+
+                    margin-top: 2px;
+
+                    font-size: 78%;
+                }
+            }
+        }
+
+        .container-icons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .fb, .tw, .ig {
+                color: #ffffff;
+            }
         }
     }
 }
