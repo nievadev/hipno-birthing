@@ -251,6 +251,10 @@ header nav ul li:hover ul li {
   .mobile-button-icon {
     display: none;
   }
+
+  .container-whole-info {
+    width: 100%;
+  }
 }
 #listMobile {
   flex-direction: column;
