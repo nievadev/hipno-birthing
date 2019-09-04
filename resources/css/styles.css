@@ -76,16 +76,19 @@ svg {
   display: flex;
   align-items: center;
 }
+.container-topHeader .container-whole-info .container-info .phone .phone-icon {
+  margin-top: 6px;
+}
 .container-topHeader .container-whole-info .container-info .phone .phone-info {
   display: inline-block;
   font-size: 75%;
+  margin-top: 4px;
 }
 .container-topHeader .container-whole-info .container-info .email {
   display: flex;
 }
 .container-topHeader .container-whole-info .container-info .email .email-icon:link, .container-topHeader .container-whole-info .container-info .email .email-icon:visited {
   color: #ffffff;
-  margin-top: 1px;
 }
 .container-topHeader .container-whole-info .container-info .email .email-info:link, .container-topHeader .container-whole-info .container-info .email .email-info:visited {
   color: #ffffff;
@@ -254,6 +257,10 @@ header nav ul li:hover ul li {
 
   .container-whole-info {
     width: 100%;
+  }
+
+  .email-icon {
+    margin-top: 5px;
   }
 }
 #listMobile {

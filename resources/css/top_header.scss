@@ -42,10 +42,16 @@
             align-items: center;
 
             .phone {
+                .phone-icon {
+                    margin-top: 6px;
+                }
+
                 .phone-info {
                     display: inline-block;
 
                     font-size: 75%;
+
+                    margin-top: 4px;
                 }
             }
 
@@ -54,8 +60,6 @@
 
                 .email-icon:link, .email-icon:visited {
                     color: #ffffff;
-
-                    margin-top: 1px;
                 }
 
                 .email-info:link, .email-info:visited {
