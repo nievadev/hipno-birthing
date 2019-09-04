@@ -48,6 +48,10 @@ input[type="checkbox"] {
     display: none;
 }
 
+svg {
+    display: block
+}
+
 @import "top_header";
 @import "header";
 @import "media_queries";

@@ -39,9 +39,10 @@
         margin: 0;
     }
 
-    .email-icon, .fb, .ig, .tw {
+    .email-icon svg, .fb, .ig, .tw {
         margin: 0px 6px;
         padding: 0;
+        height: 20px;
     }
 
     .container-topHeader {
@@ -62,7 +63,7 @@
     }
 
     .top-header {
-        height: 50px;
+        height: 35px;
     }
 
     .mobile-button-icon {

@@ -3,6 +3,8 @@
     width: 100%;
 
     background-color: $topHeader-color;
+    
+    position: fixed;
 }
 
 .container-topHeader {
@@ -20,13 +22,17 @@
 
         .mobile-button-icon {
             padding: 4px;
-            height: 30px;
+            height: 22px;
         }
+    }
+
+    label:hover {
+        cursor: pointer;
     }
 
     .container-whole-info {
         display: flex;
-        width: 100%;
+        align-items: center;
 
         .container-info {
             display: flex;

@@ -37,10 +37,15 @@ input[type=checkbox] {
   display: none;
 }
 
+svg {
+  display: block;
+}
+
 .top-header {
   height: 30px;
   width: 100%;
   background-color: #e8b1fc;
+  position: fixed;
 }
 
 .container-topHeader {
@@ -56,11 +61,14 @@ input[type=checkbox] {
 }
 .container-topHeader label .mobile-button-icon {
   padding: 4px;
-  height: 30px;
+  height: 22px;
+}
+.container-topHeader label:hover {
+  cursor: pointer;
 }
 .container-topHeader .container-whole-info {
   display: flex;
-  width: 100%;
+  align-items: center;
 }
 .container-topHeader .container-whole-info .container-info {
   display: flex;
@@ -95,7 +103,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 40px 0px;
   background-color: #ffffff;
 }
 header .logo {
@@ -194,9 +202,10 @@ header nav ul li:hover ul li {
     margin: 0;
   }
 
-  .email-icon, .fb, .ig, .tw {
+  .email-icon svg, .fb, .ig, .tw {
     margin: 0px 6px;
     padding: 0;
+    height: 20px;
   }
 
   .container-topHeader {
@@ -217,7 +226,7 @@ header nav ul li:hover ul li {
   }
 
   .top-header {
-    height: 50px;
+    height: 35px;
   }
 
   .mobile-button-icon {
