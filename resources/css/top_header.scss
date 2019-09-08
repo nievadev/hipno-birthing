@@ -83,6 +83,9 @@
             align-items: center;
 
             .fb, .tw, .ig {
+                display: block;
+                height: 16px;
+
                 color: #ffffff;
             }
         }
