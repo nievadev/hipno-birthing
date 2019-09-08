@@ -18,23 +18,12 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .container {
   width: 70%;
   margin: 0 auto;
-}
-
-#listMobile {
-  display: none;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-
-#listDropdown {
-  display: none;
 }
 
 svg {
@@ -47,6 +36,7 @@ svg {
   background-color: #e8b1fc;
   position: fixed;
   box-shadow: 0px 3px 10px #919191;
+  z-index: 3;
 }
 
 .container-topHeader {
@@ -56,14 +46,16 @@ svg {
   height: inherit;
   color: #ffffff;
 }
-.container-topHeader label {
-  display: flex;
+.container-topHeader .mobile-btn {
   align-items: center;
   margin-right: 5px;
 }
-.container-topHeader label .mobile-button-icon {
+.container-topHeader .mobile-btn .mobile-btn-icon {
   padding: 4px;
   height: 22px;
+}
+.container-topHeader .mobile-btn:hover {
+  cursor: pointer;
 }
 .container-topHeader label:hover {
   cursor: pointer;
@@ -104,27 +96,27 @@ svg {
   color: #ffffff;
 }
 
-header {
+.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 0px;
   background-color: #ffffff;
 }
-header .logo {
+.main-header .logo {
   display: flex;
   justify-content: center;
 }
-header .logo img {
+.main-header .logo img {
   width: 200px;
   height: 100%;
   align-self: center;
 }
-header nav {
+.main-header nav {
   display: flex;
   align-items: center;
 }
-header nav .menu-btn {
+.main-header nav .menu-btn {
   width: 90px;
   justify-content: space-between;
   align-items: center;
@@ -135,38 +127,37 @@ header nav .menu-btn {
   transition: background-color 0.2s, border-bottom 0.2s;
   border-bottom: 1px solid transparent;
 }
-header nav .menu-btn .menu {
+.main-header nav .menu-btn .menu {
   display: block;
 }
-header nav .menu-btn:hover {
+.main-header nav .menu-btn:hover {
   background-color: rgba(242, 210, 253, 0.8);
   border-bottom: 1px solid #c8a2c8;
   cursor: pointer;
 }
-header nav ul {
+.main-header nav ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
 }
-header nav ul li ul {
+.main-header nav ul li ul {
   display: flex;
   flex-direction: column;
   position: absolute;
   padding: 0;
 }
-header nav ul li ul li {
+.main-header nav ul li ul li {
   display: none;
 }
-header nav ul li a:visited, header nav ul li a:link {
+.main-header nav ul li a:visited, .main-header nav ul li a:link {
   padding: 10px 20px;
   color: #7f7f7f;
   transition: color 0.4s;
 }
-header nav ul li .picked-option:visited, header nav ul li .picked-option:link,
-header nav ul li a:hover, header nav ul li a:active {
+.main-header nav ul li .picked-option:visited, .main-header nav ul li .picked-option:link,
+.main-header nav ul li a:hover, .main-header nav ul li a:active {
   color: #c8a2c8;
 }
-header nav ul li:hover ul li {
+.main-header nav ul li:hover ul li {
   display: block;
 }
 
@@ -185,7 +176,7 @@ header nav ul li:hover ul li {
   }
 }
 @media only screen and (max-width: 1056px) {
-  header nav ul {
+  .main-header nav ul {
     display: none;
   }
 
@@ -218,7 +209,7 @@ header nav ul li:hover ul li {
     width: 100%;
   }
 
-  header {
+  .main-header {
     flex-direction: column;
   }
 
@@ -234,7 +225,7 @@ header nav ul li:hover ul li {
     height: 35px;
   }
 
-  .mobile-button-icon {
+  .mobile-btn-icon {
     display: flex;
   }
 }
@@ -251,7 +242,7 @@ header nav ul li:hover ul li {
     justify-content: space-between;
   }
 
-  .mobile-button-icon {
+  .mobile-btn-icon {
     display: none;
   }
 
@@ -263,49 +254,46 @@ header nav ul li:hover ul li {
     margin-top: 5px;
   }
 }
-#listMobile {
+#mySidenav {
+  background-color: #fee9e1;
+  display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 0;
+  position: fixed;
+  top: -208px;
+  overflow-x: hidden;
   margin: 0;
-}
-#listMobile li {
+  /* padding: 50px 30px 30px 60px; */
+  transition: 0.5s;
   width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  z-index: 2;
+  /* box-shadow: 0px 3px 10px #919191; */
+  box-shadow: 0px 3px 10px transparent;
 }
-#listMobile li a:link, #listMobile li a:visited {
+#mySidenav li a {
+  padding: 8px 32px;
+  font-size: 1.2em;
   color: #7f7f7f;
-  padding: 0px 20px 10px 20px;
-  transition: color 0.2s;
+  transition: color 0.4s;
 }
-#listMobile li a:hover, #listMobile li a:active {
+#mySidenav li a:hover {
   color: #c8a2c8;
 }
-#listMobile li label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 20px 10px 20px;
+
+#myMenuCloseButton {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  margin: 10px;
   color: #7f7f7f;
   transition: color 0.2s;
 }
-#listMobile li label .close {
-  color: #f55f55;
-  transition: color 0.2s;
-}
-#listMobile li label .close:hover {
-  color: #f88f88;
-}
-#listMobile li label:hover {
+
+#myMenuCloseButton:hover {
   cursor: pointer;
   color: #c8a2c8;
-}
-#listMobile li #listDropdown {
-  flex-direction: column;
-  padding: 0;
-}
-#listMobile li ul {
-  margin-left: 50%;
-  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */

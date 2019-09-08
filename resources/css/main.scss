@@ -1,6 +1,7 @@
 $topHeader-color: #e8b1fc;
 
 $header-bgColor: #ffffff;
+$sidenav-bgColor: #fee9e1;
 
 $navBar-color: #7f7f7f; 
 $navBar-colorPicked: #c8a2c8 ; 
@@ -29,6 +30,7 @@ a {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .container {
@@ -36,23 +38,11 @@ ul {
     margin: 0 auto;
 }
 
-#listMobile {
-    display: none;
-}
-
-input[type="checkbox"] {
-    display: none;
-}
-
-#listDropdown {
-    display: none;
-}
-
 svg {
     display: block
 }
 
 @import "top_header";
-@import "header";
+@import "main_header";
 @import "media_queries";
-@import "list_mobile";
+@import "sidenav";

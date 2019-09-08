@@ -1,27 +1,20 @@
-function showMobileBar(checkboxId, listId) {
-    var checkbox = document.getElementById(checkboxId);
+var actioned = false;
 
-    if (checkbox.checked) {
-        document.getElementById(listId).style.display = "flex";
+function actionNav() 
+{
+    if (actioned == false) 
+    {
+        document.getElementById("mySidenav").style.top = "0px";
+        document.getElementById("mySidenav").style.boxShadow = "0px 3px 10px #919191";
+
+        actioned = true;
     }
 
-    else {
-        document.getElementById(listId).style.display = "none";
+    else
+    {
+        document.getElementById("mySidenav").style.top = "-208px";
+        document.getElementById("mySidenav").style.boxShadow = "0px 3px 10px transparent";
+
+        actioned = false;
     }
 }
-
-function disappearDropdownMenu(screenSize) {
-    if (screenSize.matches) {
-        document.getElementById("checkboxList").checked = false;
-    }
-
-    showMobileBar("checkboxList", "listMobile");
-}
-
-var tabletSize = window.matchMedia("(min-width: 1056px)");
-tabletSize.addListener(disappearDropdownMenu);
-disappearDropdownMenu(tabletSize);
-
-var mobileSize = window.matchMedia("(max-width: 533px)");
-mobileSize.addListener(disappearDropdownMenu);
-disappearDropdownMenu(mobileSize);

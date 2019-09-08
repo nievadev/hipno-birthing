@@ -7,6 +7,8 @@
     position: fixed;
     
     box-shadow: 0px 3px 10px #919191;
+
+    z-index: 3;
 }
 
 .container-topHeader {
@@ -18,15 +20,18 @@
 
     color: #ffffff;
 
-    label {
-        display: flex;
+    .mobile-btn {
         align-items: center;
         margin-right: 5px;
 
-        .mobile-button-icon {
+        .mobile-btn-icon {
             padding: 4px;
             height: 22px;
         }
+    }
+
+    .mobile-btn:hover {
+        cursor: pointer;
     }
 
     label:hover {
