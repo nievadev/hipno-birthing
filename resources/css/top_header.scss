@@ -49,6 +49,7 @@
             .phone {
                 .phone-icon {
                     margin-top: 6px;
+                    height: 16px;
                 }
 
                 .phone-info {
@@ -62,9 +63,10 @@
 
             .email {
                 display: flex;
+                margin-top: 4px;
 
-                .email-icon:link, .email-icon:visited {
-                    color: #ffffff;
+                .email-icon {
+                    height: 16px;
                 }
 
                 .email-info:link, .email-info:visited {
@@ -85,8 +87,6 @@
             .fb, .tw, .ig {
                 display: block;
                 height: 16px;
-
-                color: #ffffff;
             }
         }
     }

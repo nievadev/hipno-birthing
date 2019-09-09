@@ -70,6 +70,7 @@ svg {
 }
 .container-topHeader .container-whole-info .container-info .phone .phone-icon {
   margin-top: 6px;
+  height: 16px;
 }
 .container-topHeader .container-whole-info .container-info .phone .phone-info {
   display: inline-block;
@@ -78,9 +79,10 @@ svg {
 }
 .container-topHeader .container-whole-info .container-info .email {
   display: flex;
+  margin-top: 4px;
 }
-.container-topHeader .container-whole-info .container-info .email .email-icon:link, .container-topHeader .container-whole-info .container-info .email .email-icon:visited {
-  color: #ffffff;
+.container-topHeader .container-whole-info .container-info .email .email-icon {
+  height: 16px;
 }
 .container-topHeader .container-whole-info .container-info .email .email-info:link, .container-topHeader .container-whole-info .container-info .email .email-info:visited {
   color: #ffffff;
@@ -95,7 +97,6 @@ svg {
 .container-topHeader .container-whole-info .container-icons .fb, .container-topHeader .container-whole-info .container-icons .tw, .container-topHeader .container-whole-info .container-icons .ig {
   display: block;
   height: 16px;
-  color: #ffffff;
 }
 
 .main-header {
@@ -111,7 +112,7 @@ svg {
 }
 .main-header .logo img {
   width: 200px;
-  height: 100%;
+  height: auto;
   align-self: center;
 }
 .main-header nav {
@@ -131,6 +132,9 @@ svg {
 }
 .main-header nav .menu-btn .menu {
   display: block;
+}
+.main-header nav .menu-btn .menu-open-icon {
+  height: 16px;
 }
 .main-header nav .menu-btn:hover {
   background-color: rgba(242, 210, 253, 0.8);
@@ -200,7 +204,7 @@ svg {
     margin: 0;
   }
 
-  .email-icon svg, .fb, .ig, .tw {
+  .email-icon, .fb, .ig, .tw {
     margin: 0px 6px;
     padding: 0;
     height: 20px;
