@@ -69,6 +69,10 @@
     .mobile-btn-icon {
         display: flex;
     }
+
+    #myMenuCloseButton {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 533px) {
@@ -82,10 +86,6 @@
 
     .container-whole-info {
         justify-content: space-between;
-    }
-
-    .mobile-btn-icon {
-        display: none;
     }
 
     .container-whole-info {

@@ -99,6 +99,12 @@ svg {
   height: 16px;
 }
 
+#myMenuMobileCloseButton {
+  height: 30px;
+  display: none;
+  padding: 0;
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -234,6 +240,10 @@ svg {
   .mobile-btn-icon {
     display: flex;
   }
+
+  #myMenuCloseButton {
+    display: none;
+  }
 }
 @media only screen and (min-width: 533px) {
   .email {
@@ -246,10 +256,6 @@ svg {
 
   .container-whole-info {
     justify-content: space-between;
-  }
-
-  .mobile-btn-icon {
-    display: none;
   }
 
   .container-whole-info {
