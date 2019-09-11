@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hypnobirthingmind</title>
+
+    <!-- Developer: Martin Nieva (nievadev in github) -->
+    <!-- Some icons were grabbed from Font Awesome and Google fonts "Material Icons" (https://material.io/resources/icons/?style=baseline). Very cool icons, thanks!! -->
+
+    <!-- Load google font DM Sans -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet"> 
+
+    <!-- Own stylesheet -->
+    <link rel="stylesheet" href="../resources/css/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="resources/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="resources/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="resources/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="resources/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="resources/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="resources/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="resources/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="resources/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="resources/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="resources/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="resources/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="resources/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="resources/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="resources/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="resources/img/favicon/mstile-310x310.png" />
+</head>
+<body>
+    <header id="myHeader">
+        <div class="top-header">
+            <div class="container-topHeader container">
+                <div class="container-whole-info">
+                    <div class="container-info">
+                        <div class="phone">
+                            <img class="phone-icon" src="../resources/svg/phone.svg" alt="Phone icon">
+                            <span class="phone-info">07989 552112</span>
+                        </div>
+
+                        <div class="email">
+                            <a href="mailto:tracey@hypnobirthingmind.co.uk">
+                                <img class="email-icon" src="../resources/svg/email.svg" alt="Email icon">
+                            </a>
+                            <a href="mailto:tracey@hypnobirthingmind.co.uk" class="email-info">tracey@hypnobirthingmind.co.uk</a>
+                        </div>
+                    </div>
+
+                    <div class="container-icons">
+                        <a href="https://www.facebook.com/Hypnobirthingmind/" target="_blank">
+                            <img class="fb" src="../resources/svg/fb.svg" alt="Facebook icon">
+                            <!-- Icon grabbed from font awesome -->
+                        </a>
+
+                        <a href="https://www.instagram.com/hypnobirthingmind/" target="_blank">
+                            <img class="ig" src="../resources/svg/ig.svg" alt="Instagram icon">
+                            <!-- Icon grabbed from font awesome -->
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img class="tw" src="../resources/svg/tw.svg" alt="Twitter icon">
+                            <!-- Icon grabbed from font awesome -->
+                        </a>
+                    </div>
+                </div>
+                <!-- Button in mobile -->
+                <span onclick="actionNav(true)" id="myMobileButton" class="mobile-btn">
+                    <img id="myMenuMobileButton" class="mobile-btn-icon" src="../resources/svg/open_mobile.svg" alt="Open mobile icon">
+                    <img id="myMenuMobileCloseButton" class="mobile-btn-icon" src="../resources/svg/close_mobile.svg" alt="Close mobile icon">
+                </span>
+            </div>
+        </div>
+
+        <div class="main-header container">
+            <div class="logo">
+                <a href="#">
+                    <img src="../resources/img/logo230x230.png" alt="Hypnobirthing logo">
+                </a>
+            </div>
+            <nav>
+                <!-- Button in tablet -->
+                <span onclick="actionNav()" class="menu-btn">
+                    <img class="menu-open-icon" src="../resources/svg/open.svg" alt="Open icon">
+                    <span class="menu">Menu</span>
+                </span>
+                <ul> 
+                    <li><a class="picked-option" href="#">Home</a></li>
+                    <li><a href="#">What is hypnobirthing mind?</a>
+                        <ul>
+                            <li><a href="#">Benefits</a></li>
+                            <li><a href="#">Frequently Asked Questions</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Book a session</a></li>
+                    <li><a href="#">About me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <ul id="mySidenav" class="sidenav">
+        <span onclick="actionNav()" id="myMenuCloseButton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+        </span>
+        <li><a href="#">Home</a></li>
+        <li><span class="dropdown-btn" onclick="actionDropdown()">
+            Hypnobirthing
+            <img id="myCollapseIcon" class="collapse-icon" src="../resources/svg/down.svg" alt="Collapse icon">
+	    </span>
+            <ul class="dropdown-list" id="myDropdownList">
+                <li><a href="#">What's hypnobirthing mind?</a></li>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">Terms of service</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Book a session</a></li>
+        <li><a href="#">About me</a></li>
+    </ul>
+
+    <script src="../resources/js/main.js"></script>
+</body>
+</html>
