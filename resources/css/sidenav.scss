@@ -24,7 +24,7 @@
     box-shadow: 0px 3px 10px transparent; 
 
     li {
-        a, .dropdown-button {
+        a, .dropdown-btn {
             display: block;
             padding: 8px 32px;
 
@@ -33,7 +33,25 @@
             transition: color 0.4s;
         }
 
-        a:hover, .dropdown-button:hover {
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 8px 32px;
+
+            color: $navBar-color;
+
+            transition: color 0.4s;
+            
+            .collapse-icon {
+                transform: rotate(-180deg);
+
+                transition: 0.2s;
+            }
+        }
+
+        a:hover, .dropdown-btn:hover {
             color: $navBar-colorPicked;
 
             cursor: pointer;
@@ -45,8 +63,6 @@
             overflow: hidden;
 
             z-index: 10;
-
-            transition: height 0.2s;
 
             li {
             }

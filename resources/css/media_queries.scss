@@ -76,13 +76,13 @@
 }
 
 @media only screen and (max-width: 382px) {
-    .sidenav li a, .dropdown-button {
+    .sidenav li a, .dropdown-btn {
         font-size: 15px;
     }
 }
 
 @media only screen and (min-width: 382px) {
-    .sidenav li a, .dropdown-button {
+    .sidenav li a, .dropdown-btn {
         font-size: 1.2em;
     }
 }

@@ -38,7 +38,8 @@ function actionDropdown()
 {
     if (actioned2 == false)
     {
-        document.getElementById("myDropdownList").style.height = "190px";
+        document.getElementById("myDropdownList").style.height = "auto";
+        document.getElementById("myCollapseIcon").style.transform = "rotate(0deg)";
 
         actioned2 = true;
     }
@@ -46,6 +47,7 @@ function actionDropdown()
     else
     {
         document.getElementById("myDropdownList").style.height = "0";
+        document.getElementById("myCollapseIcon").style.transform = "rotate(-180deg)";
 
         actioned2 = false;
     }
@@ -56,6 +58,11 @@ function disappear(x)
     if (x.matches)
     {
         document.getElementById("myMobileButton").style.display = "none";
+
+	if (actioned)
+	{
+	    actionNav();
+	}
     }
 
     else
@@ -67,5 +74,3 @@ function disappear(x)
 var x = window.matchMedia("(min-width: 533px)");
 disappear(x);
 x.addListener(disappear);
-
-// 382px width
