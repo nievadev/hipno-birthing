@@ -22,6 +22,7 @@ function actionNav(mobile = false)
         document.getElementById("mySidenav").style.top = "-208px";
         document.getElementById("mySidenav").style.boxShadow = "0px 3px 10px transparent";
         document.getElementById("myDropdownList").style.height = "0";
+        document.getElementById("myCollapseIcon").style.transform = "rotate(-180deg)";
 
         if (mobile == true)
         {
