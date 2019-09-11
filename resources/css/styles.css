@@ -36,7 +36,7 @@ svg {
   background-color: #e8b1fc;
   position: fixed;
   box-shadow: 0px 3px 10px #919191;
-  z-index: 3;
+  z-index: 30;
 }
 
 .container-topHeader {
@@ -245,6 +245,16 @@ svg {
     display: none;
   }
 }
+@media only screen and (max-width: 382px) {
+  .sidenav li a, .dropdown-button {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 382px) {
+  .sidenav li a, .dropdown-button {
+    font-size: 1.2em;
+  }
+}
 @media only screen and (min-width: 533px) {
   .email {
     margin-left: 15px;
@@ -279,19 +289,26 @@ svg {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 10px;
-  z-index: 2;
+  z-index: 20;
   box-shadow: 0px 3px 10px transparent;
 }
-#mySidenav li a {
+#mySidenav li a, #mySidenav li .dropdown-button {
+  display: block;
   padding: 8px 32px;
-  font-size: 1.2em;
   color: #7f7f7f;
   transition: color 0.4s;
 }
-#mySidenav li a:hover {
+#mySidenav li a:hover, #mySidenav li .dropdown-button:hover {
   color: #c8a2c8;
+  cursor: pointer;
 }
-
+#mySidenav li .dropdown-list {
+  background-color: #fdddd1;
+  height: 0;
+  overflow: hidden;
+  z-index: 10;
+  transition: height 0.2s;
+}
 #myMenuCloseButton {
   position: absolute;
   top: 30px;
