@@ -24,6 +24,9 @@ ul {
 svg {
   display: block; }
 
+.picked-option:visited, .picked-option:link {
+  color: #c8a2c8 !important; }
+
 .top-header {
   height: 30px;
   width: 100%;
@@ -131,7 +134,6 @@ svg {
         padding: 10px 20px;
         color: #7f7f7f;
         transition: color 0.4s; }
-      .main-header nav ul li .picked-option:visited, .main-header nav ul li .picked-option:link,
       .main-header nav ul li a:hover, .main-header nav ul li a:active {
         color: #c8a2c8; }
       .main-header nav ul li:hover ul li {

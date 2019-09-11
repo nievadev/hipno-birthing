@@ -43,6 +43,10 @@ svg {
     display: block
 }
 
+.picked-option:visited, .picked-option:link {
+    color: $navBar-colorPicked !important;
+}
+
 @import "top_header";
 @import "main_header";
 @import "media_queries";
