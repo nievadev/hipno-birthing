@@ -1,0 +1,7 @@
+markdown: redcarpet
+baseurl: /hypnobirthing
+exclude: [
+    "changes",
+    "hypnobirthing",
+    "files/"
+]

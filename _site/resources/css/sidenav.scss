@@ -1,0 +1,89 @@
+#mySidenav {
+    background-color: $sidenav-bgColor;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: -208px;
+    overflow-x: hidden;
+
+    margin: 0;
+
+    transition: top 0.5s ease, box-shadow 0.5s;
+
+    width: 100%;
+
+    text-align: center;
+
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    z-index: 20;
+
+    box-shadow: 0px 3px 10px transparent; 
+
+    li {
+        a, .dropdown-btn {
+            display: block;
+            padding: 8px 32px;
+
+            color: $navBar-color;
+
+            transition: color 0.4s;
+        }
+
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 8px 32px;
+
+            color: $navBar-color;
+
+            transition: color 0.4s;
+            
+            .collapse-icon {
+                transform: rotate(-180deg);
+
+                transition: 0.2s;
+            }
+        }
+
+        a:hover, .dropdown-btn:hover {
+            color: $navBar-colorPicked;
+
+            cursor: pointer;
+        }
+
+        .dropdown-list {
+            background-color: $dropdown-bgColor;
+            height: 0;
+            overflow: hidden;
+
+            z-index: 10;
+
+            li {
+            }
+        }
+    }
+}
+
+#myMenuCloseButton {
+    position: absolute;
+    top: 30px;
+    right: 0;
+
+    margin: 10px;
+
+    color: $navBar-color;
+
+    transition: color 0.2s;
+}
+
+#myMenuCloseButton:hover {
+    cursor: pointer;
+
+    color: $navBar-colorPicked;
+}
