@@ -1,0 +1,53 @@
+$topHeader-color: #e8b1fc;
+
+$header-bgColor: #ffffff;
+$sidenav-bgColor: #fee9e1;
+$dropdown-bgColor: #fdddd1;
+
+$navBar-color: #7f7f7f; 
+$navBar-colorPicked: #c8a2c8 ; 
+
+$container-width: 70%;
+
+html {
+    background-color: #ffffff;
+    color: #000000;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    width: $container-width;
+    margin: 0 auto;
+}
+
+svg {
+    display: block
+}
+
+.picked-option:visited, .picked-option:link {
+    color: $navBar-colorPicked !important;
+}
+
+@import "top_header";
+@import "main_header";
+@import "media_queries";
+@import "sidenav";

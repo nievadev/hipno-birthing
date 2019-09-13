@@ -1,0 +1,99 @@
+.top-header {
+    height: 30px;
+    width: 100%;
+
+    background-color: $topHeader-color;
+    
+    position: fixed;
+    
+    box-shadow: 0px 3px 10px #919191;
+
+    z-index: 30;
+}
+
+.container-topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: inherit;
+
+    color: #ffffff;
+
+    .mobile-btn {
+        align-items: center;
+        margin-right: 5px;
+
+        .mobile-btn-icon {
+            padding: 4px;
+            height: 22px;
+        }
+    }
+
+    .mobile-btn:hover {
+        cursor: pointer;
+    }
+
+    label:hover {
+        cursor: pointer;
+    }
+
+    .container-whole-info {
+        display: flex;
+        align-items: center;
+
+        .container-info {
+            display: flex;
+            align-items: center;
+
+            .phone {
+                .phone-icon {
+                    margin-top: 6px;
+                    height: 16px;
+                }
+
+                .phone-info {
+                    display: inline-block;
+
+                    font-size: 75%;
+
+                    margin-top: 4px;
+                }
+            }
+
+            .email {
+                display: flex;
+                margin-top: 4px;
+
+                .email-icon {
+                    height: 16px;
+                }
+
+                .email-info:link, .email-info:visited {
+                    color: #ffffff;
+
+                    margin-top: 2px;
+
+                    font-size: 78%;
+                }
+            }
+        }
+
+        .container-icons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .fb, .tw, .ig {
+                display: block;
+                height: 16px;
+            }
+        }
+    }
+}
+
+#myMenuMobileCloseButton {
+    height: 30px;
+    display: none;
+    padding: 0;
+}
