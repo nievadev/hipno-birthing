@@ -1,6 +1,6 @@
 markdown: redcarpet
-baseurl: /hypnobirthingmind
 livereload: true
+baseurl: /hypnobirthingmind
 exclude: [
     "changes",
     "hypnobirthing",
