@@ -3,16 +3,14 @@ $topHeader-color: #e8b1fc;
 $header-bgColor: #ffffff;
 $sidenav-bgColor: #fee9e1;
 $dropdown-bgColor: #fdddd1;
+$footer-bgColor: #f6e2fe;
 
 $navBar-color: #7f7f7f; 
 $navBar-colorPicked: #c8a2c8 ; 
 
 $container-width: 70%;
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
+$greyColor: rgba(0, 0, 0, .6);
 
 html {
     background-color: #ffffff;
@@ -27,25 +25,6 @@ html {
 
 body {
     margin: 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
 }
 
 a {
@@ -71,8 +50,14 @@ svg {
     color: $navBar-colorPicked !important;
 }
 
+.indent {
+    text-indent: 40px;
+}
+
 @import "top_header";
 @import "main_header";
 @import "media_queries";
 @import "sidenav";
+@import "layout";
+@import "zindex";
 @import "footer";
