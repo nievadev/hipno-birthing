@@ -1,0 +1,82 @@
+footer {
+    display: flex;
+    align-items: center;
+
+    background-color: $footer-bgColor;
+
+    box-shadow: 0px -10px 5px $footer-bgColor, 0px 3px 10px #919191;
+
+    font-size: 0.9em;
+    color: $greyColor;
+
+    .footer-container {
+        height: 85%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+
+        .info, .contact, .follow {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info {
+            margin-right: 40px;
+
+            .logo-footer {
+                align-self: center;
+                padding-right: 20px;
+            }
+
+            .what-is {
+                display: block;
+
+                margin: 10px 0;
+            }
+
+            .benefits-btn {
+                display: block;
+                align-self: center;
+                border: 3px solid $topHeader-color;
+                padding: 5px 10px;
+                border-radius: 10px;
+                color: $greyColor;
+                transition: all 0.3s;
+/*
+                box-shadow: 0px 5px 0px #de90fb;
+*/
+                box-shadow: 0px 5px 0px $topHeader-color;
+                position: relative;
+                top: 0px;
+
+                &:hover {
+                    background-color: $topHeader-color;
+                    box-shadow: 0px 0px 0px #de90fb;
+                    top: 5px;
+                }
+            }
+        }
+
+        .contact {
+            border-left: 2px solid rgba(0, 0, 0, .1);
+            justify-content: flex-start;
+
+            .connect {
+                font-weight: bold;
+            }
+
+            .email {
+                .email-icon {
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+
+.footer-nav {
+    background-color: #e6e6e6;
+}

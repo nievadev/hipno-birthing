@@ -306,7 +306,7 @@ footer {
   footer .footer-container {
     height: 85%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr; }
     footer .footer-container .info, footer .footer-container .contact, footer .footer-container .follow {
       display: flex;
@@ -340,7 +340,50 @@ footer {
           box-shadow: 0px 0px 0px #de90fb;
           top: 5px; }
     footer .footer-container .contact {
-      border-left: 2px solid rgba(0, 0, 0, 0.1); }
+      border-left: 2px solid rgba(0, 0, 0, 0.1);
+      display: flex; }
+      footer .footer-container .contact div {
+        display: flex;
+        flex-direction: column; }
+        footer .footer-container .contact div .follow-row {
+          display: flex;
+          flex-direction: row; }
+        footer .footer-container .contact div .connect, footer .footer-container .contact div .follow {
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 1.1em;
+          margin-bottom: 5px;
+          display: flex;
+          justify-content: center; }
+          footer .footer-container .contact div .connect p, footer .footer-container .contact div .follow p {
+            display: inline;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+            margin: 0;
+            padding: 0; }
+        footer .footer-container .contact div .email, footer .footer-container .contact div .facebook, footer .footer-container .contact div .twitter, footer .footer-container .contact div .instagram {
+          display: flex;
+          align-items: center;
+          padding: 2px 0;
+          margin: 0; }
+          footer .footer-container .contact div .email span, footer .footer-container .contact div .facebook span, footer .footer-container .contact div .twitter span, footer .footer-container .contact div .instagram span {
+            padding-top: 4px;
+            color: rgba(0, 0, 0, 0.6);
+            padding-left: 4px; }
+          footer .footer-container .contact div .email img, footer .footer-container .contact div .facebook img, footer .footer-container .contact div .twitter img, footer .footer-container .contact div .instagram img {
+            height: 18px;
+            width: auto; }
+        footer .footer-container .contact div .phone {
+          display: flex;
+          align-items: center;
+          padding: 5px 0; }
+          footer .footer-container .contact div .phone .phone-icon {
+            height: 18px;
+            width: auto; }
+        footer .footer-container .contact div .facebook, footer .footer-container .contact div .twitter, footer .footer-container .contact div .instagram {
+          margin-left: 10px; }
+      footer .footer-container .contact .lets-connect {
+        margin-bottom: 20px; }
+      footer .footer-container .contact .follow-us {
+        margin-top: 20px; }
 
 .footer-nav {
   background-color: #e6e6e6; }

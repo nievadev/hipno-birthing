@@ -13,7 +13,7 @@ footer {
         height: 85%;
 
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
 
         .info, .contact, .follow {
@@ -62,6 +62,76 @@ footer {
 
         .contact {
             border-left: 2px solid rgba(0, 0, 0, .1);
+            display: flex;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                .follow-row {
+                    display: flex;
+                    flex-direction: row;
+                }
+                
+                .connect, .follow {
+                    color: $greyColor;
+                    font-size: 1.1em;
+                    margin-bottom: 5px;
+                    display: flex;
+                    justify-content: center;
+
+                    p {
+                        display: inline;
+                        border-bottom: 1px solid $greyColor;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .email, .facebook, .twitter, .instagram {
+                    display: flex;
+                    align-items: center;
+                    padding: 2px 0;
+                    margin: 0;
+
+                    span {
+                        padding-top: 4px;
+                        color: $greyColor;
+                        padding-left: 4px;
+                    }
+
+                    img {
+                        height: 18px;
+                        width: auto;
+                    }
+                }
+
+                .phone {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 0;
+
+                    .phone-info {
+                    }
+
+                    .phone-icon {
+                        height: 18px;
+                        width: auto;
+                    }
+                }
+
+                .facebook, .twitter, .instagram {
+                    margin-left: 10px;
+                }
+            }
+
+            .lets-connect {
+                margin-bottom: 20px;
+            }
+
+            .follow-us {
+                margin-top: 20px;
+            }
         }
     }
 }
