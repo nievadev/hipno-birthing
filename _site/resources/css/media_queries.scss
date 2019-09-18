@@ -8,9 +8,46 @@
     }
 }
 
-@media only screen and (max-width: 1358px) {
+@media only screen and (max-width: 1548px) {
     .container {
         width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1272px) {
+    .follow-row {
+        flex-direction: column;
+    }
+
+    .follow-us {
+        margin: 0 !important;
+    }
+
+    .lets-connect {
+        margin: 0 0 10px 0 !important;
+        padding-top: 10px;
+    }
+
+    .phone {
+        margin-left: 16px;
+    }
+
+    .logo-footer {
+        img {
+            height: 40px;
+        }
+    }
+
+    .benefits-btn {
+        transform: scale(0.8);
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+
+    .footer-container {
+        margin-top: 0px !important;
     }
 }
 
@@ -24,13 +61,24 @@
     }
 }
 
-/*
-@media only screen and (max-width: 746px) {
-    footer {
-        height:
+@media only screen and (max-width: 892px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .contact {
+        border-left: none !important;
+    }
+
+    .follow-row {
+        flex-direction: row;
+    }
+    
+    .lets-connect {
+        flex-direction: row;
+        border-top: 2px solid rgba(0, 0, 0, .1);
     }
 }
-*/
 
 @media only screen and (max-width: 682px) {
     .container-topHeader {
@@ -39,6 +87,10 @@
 }
 
 @media only screen and (max-width: 533px) {
+    .info {
+        display: none !important;
+    }
+
     .phone, .menu-btn, .email-info {
         display: none;
     }
@@ -80,6 +132,19 @@
 
     #myMenuCloseButton {
         display: none;
+    }
+
+    .lets-connect {
+        border: none;
+    }
+
+    .footer-email-icon {
+        margin: 0;
+        padding-top: 4px;
+    }
+
+    .follow-row {
+        flex-direction: column;
     }
 }
 

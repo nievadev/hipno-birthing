@@ -5,130 +5,139 @@ footer {
 
     box-shadow: 0px -10px 5px $footer-bgColor, 0px 3px 10px #919191;
 
-    font-size: 0.9em;
-    color: $greyColor;
-
-    overflow: hidden;
-
     .footer-container {
-        height: 85%;
-        margin: auto;
-
         display: flex;
-        flex-wrap: wrap;
-
-        .info, .contact, .follow {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
+        margin: 20px auto;
 
         .info {
             flex: 1;
-            margin-right: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .logo-footer {
-                align-self: center;
-                padding-right: 20px;
+                margin: 10px 20px 10px 0px;
+
+                img {
+                    align-self: center;
+                }
             }
 
             .what-is {
-                display: block;
-
+                color: $greyColor;
                 margin: 10px 0;
+                padding-right: 10px;
             }
 
             .benefits-btn {
                 display: block;
-                align-self: center;
-                border: 3px solid $topHeader-color;
-                padding: 5px 10px;
-                border-radius: 10px;
+                margin: 10px 0 20px 0;
                 color: $greyColor;
+                border: 2px solid $topHeader-color;
+                border-radius: 10px;
+                padding: 5px 10px;
+                box-shadow: 0px 7px 0px $topHeader-color;
+                position: relative;
+                top: 0;
                 transition: all 0.3s;
-/*
-                box-shadow: 0px 5px 0px #de90fb;
-*/
-                box-shadow: 0px 5px 0px $topHeader-color;
 
                 &:hover {
+                    box-shadow: 0px 0px 0px $topHeader-color;
+                    top: 7px;
                     background-color: $topHeader-color;
-                    box-shadow: 0px 0px 0px #de90fb;
-                    top: 5px;
                 }
             }
         }
 
         .contact {
             flex: 1;
-            border-left: 2px solid rgba(0, 0, 0, .1);
             display: flex;
+            flex-direction: column;
+            border-left: 2px solid rgba(0, 0, 0, .1);
 
-            div {
+            .lets-connect {
+                flex: 1;
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 20px;
+                color: $greyColor;
+
+                .connect {
+                    border-bottom: 1px solid $greyColor;
+                    margin-bottom: 10px;
+                }
+
+                .connect-row {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        display: flex;
+                        color: $greyColor;
+
+                        img {
+                            height: 18px;
+                            padding-right: 4px;
+                            padding-top: 4px;
+                        }
+
+                        margin: 0 0 5px 0;
+                    }
+
+                    span {
+                        display: flex;
+                        margin: 0;
+
+                        img {
+                            height: 18px;
+                            padding-top: 4px;
+                            padding-right: 4px;
+                        }
+                    }
+                }
+            }
+
+            .follow-us {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 20px;
+                color: $greyColor;
+
+                .follow {
+                    display: inline-block;
+                    border-bottom: 1px solid $greyColor;
+                    margin-bottom: 10px;
+                }
 
                 .follow-row {
                     display: flex;
-                    flex-direction: row;
-                }
-                
-                .connect, .follow {
-                    color: $greyColor;
-                    font-size: 1.1em;
-                    margin-bottom: 5px;
-                    display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
+                    width: 60%;
+                    flex-wrap: wrap;
 
-                    p {
-                        display: inline;
-                        border-bottom: 1px solid $greyColor;
-                        margin: 0;
-                        padding: 0;
-                    }
-                }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
-                .email, .facebook, .twitter, .instagram {
-                    display: flex;
-                    align-items: center;
-                    padding: 2px 0;
-                    margin: 0;
-
-                    span {
-                        padding-top: 4px;
                         color: $greyColor;
-                        padding-left: 4px;
+                        
+                        img {
+                            height: 18px;
+                            padding-right: 4px;
+                        }
+
+                        span {
+                            padding-top: 4px;
+                        }
                     }
-
-                    img {
-                        height: 18px;
-                        width: auto;
-                    }
-                }
-
-                .phone {
-                    display: flex;
-                    align-items: center;
-                    padding: 5px 0;
-
-                    .phone-info {
-                    }
-
-                    .phone-icon {
-                        height: 18px;
-                        width: auto;
-                    }
-                }
-
-                .facebook, .twitter, .instagram {
-                    margin-left: 10px;
                 }
             }
         }
     }
-}
-
-.footer-nav {
-    background-color: #e6e6e6;
 }

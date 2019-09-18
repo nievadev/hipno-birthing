@@ -147,26 +147,60 @@ svg {
 
   .menu-btn {
     display: none; } }
-@media only screen and (max-width: 1358px) {
+@media only screen and (max-width: 1548px) {
   .container {
     width: 90%; } }
+@media only screen and (max-width: 1272px) {
+  .follow-row {
+    flex-direction: column; }
+
+  .follow-us {
+    margin: 0 !important; }
+
+  .lets-connect {
+    margin: 0 0 10px 0 !important;
+    padding-top: 10px; }
+
+  .phone {
+    margin-left: 16px; }
+
+  .logo-footer img {
+    height: 40px; }
+
+  .benefits-btn {
+    transform: scale(0.8); }
+
+  footer {
+    font-size: 0.9em; }
+
+  .footer-container {
+    margin-top: 0px !important; } }
 @media only screen and (max-width: 1056px) {
   .main-header nav ul {
     display: none; }
 
   .menu-btn {
     display: flex; } }
-/*
-@media only screen and (max-width: 746px) {
-    footer {
-        height:
-    }
-}
-*/
+@media only screen and (max-width: 892px) {
+  .footer-container {
+    flex-direction: column; }
+
+  .contact {
+    border-left: none !important; }
+
+  .follow-row {
+    flex-direction: row; }
+
+  .lets-connect {
+    flex-direction: row;
+    border-top: 2px solid rgba(0, 0, 0, 0.1); } }
 @media only screen and (max-width: 682px) {
   .container-topHeader {
     width: 90%; } }
 @media only screen and (max-width: 533px) {
+  .info {
+    display: none !important; }
+
   .phone, .menu-btn, .email-info {
     display: none; }
 
@@ -198,7 +232,17 @@ svg {
     display: flex; }
 
   #myMenuCloseButton {
-    display: none; } }
+    display: none; }
+
+  .lets-connect {
+    border: none; }
+
+  .footer-email-icon {
+    margin: 0;
+    padding-top: 4px; }
+
+  .follow-row {
+    flex-direction: column; } }
 @media only screen and (max-width: 382px) {
   .sidenav li a, .dropdown-btn {
     font-size: 15px; } }
@@ -295,89 +339,98 @@ footer {
 footer {
   display: flex;
   background-color: #f6e2fe;
-  box-shadow: 0px -10px 5px #f6e2fe, 0px 3px 10px #919191;
-  font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.6);
-  overflow: hidden; }
+  box-shadow: 0px -10px 5px #f6e2fe, 0px 3px 10px #919191; }
   footer .footer-container {
-    height: 85%;
-    margin: auto;
     display: flex;
-    flex-wrap: wrap; }
-    footer .footer-container .info, footer .footer-container .contact, footer .footer-container .follow {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center; }
+    margin: 20px auto; }
     footer .footer-container .info {
       flex: 1;
-      margin-right: 40px; }
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
       footer .footer-container .info .logo-footer {
-        align-self: center;
-        padding-right: 20px; }
+        margin: 10px 20px 10px 0px; }
+        footer .footer-container .info .logo-footer img {
+          align-self: center; }
       footer .footer-container .info .what-is {
-        display: block;
-        margin: 10px 0; }
+        color: rgba(0, 0, 0, 0.6);
+        margin: 10px 0;
+        padding-right: 10px; }
       footer .footer-container .info .benefits-btn {
         display: block;
-        align-self: center;
-        border: 3px solid #e8b1fc;
-        padding: 5px 10px;
-        border-radius: 10px;
+        margin: 10px 0 20px 0;
         color: rgba(0, 0, 0, 0.6);
-        transition: all 0.3s;
-        /*
-                        box-shadow: 0px 5px 0px #de90fb;
-        */
-        box-shadow: 0px 5px 0px #e8b1fc; }
+        border: 2px solid #e8b1fc;
+        border-radius: 10px;
+        padding: 5px 10px;
+        box-shadow: 0px 7px 0px #e8b1fc;
+        position: relative;
+        top: 0;
+        transition: all 0.3s; }
         footer .footer-container .info .benefits-btn:hover {
-          background-color: #e8b1fc;
-          box-shadow: 0px 0px 0px #de90fb;
-          top: 5px; }
+          box-shadow: 0px 0px 0px #e8b1fc;
+          top: 7px;
+          background-color: #e8b1fc; }
     footer .footer-container .contact {
       flex: 1;
-      border-left: 2px solid rgba(0, 0, 0, 0.1);
-      display: flex; }
-      footer .footer-container .contact div {
+      display: flex;
+      flex-direction: column;
+      border-left: 2px solid rgba(0, 0, 0, 0.1); }
+      footer .footer-container .contact .lets-connect {
+        flex: 1;
         display: flex;
-        flex-direction: column; }
-        footer .footer-container .contact div .follow-row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 0.6); }
+        footer .footer-container .contact .lets-connect .connect {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+          margin-bottom: 10px; }
+        footer .footer-container .contact .lets-connect .connect-row {
           display: flex;
-          flex-direction: row; }
-        footer .footer-container .contact div .connect, footer .footer-container .contact div .follow {
-          color: rgba(0, 0, 0, 0.6);
-          font-size: 1.1em;
-          margin-bottom: 5px;
-          display: flex;
-          justify-content: center; }
-          footer .footer-container .contact div .connect p, footer .footer-container .contact div .follow p {
-            display: inline;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-            margin: 0;
-            padding: 0; }
-        footer .footer-container .contact div .email, footer .footer-container .contact div .facebook, footer .footer-container .contact div .twitter, footer .footer-container .contact div .instagram {
-          display: flex;
-          align-items: center;
-          padding: 2px 0;
-          margin: 0; }
-          footer .footer-container .contact div .email span, footer .footer-container .contact div .facebook span, footer .footer-container .contact div .twitter span, footer .footer-container .contact div .instagram span {
-            padding-top: 4px;
+          flex-direction: column; }
+          footer .footer-container .contact .lets-connect .connect-row a {
+            display: flex;
             color: rgba(0, 0, 0, 0.6);
-            padding-left: 4px; }
-          footer .footer-container .contact div .email img, footer .footer-container .contact div .facebook img, footer .footer-container .contact div .twitter img, footer .footer-container .contact div .instagram img {
-            height: 18px;
-            width: auto; }
-        footer .footer-container .contact div .phone {
+            margin: 0 0 5px 0; }
+            footer .footer-container .contact .lets-connect .connect-row a img {
+              height: 18px;
+              padding-right: 4px;
+              padding-top: 4px; }
+          footer .footer-container .contact .lets-connect .connect-row span {
+            display: flex;
+            margin: 0; }
+            footer .footer-container .contact .lets-connect .connect-row span img {
+              height: 18px;
+              padding-top: 4px;
+              padding-right: 4px; }
+      footer .footer-container .contact .follow-us {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+        color: rgba(0, 0, 0, 0.6); }
+        footer .footer-container .contact .follow-us .follow {
+          display: inline-block;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+          margin-bottom: 10px; }
+        footer .footer-container .contact .follow-us .follow-row {
           display: flex;
-          align-items: center;
-          padding: 5px 0; }
-          footer .footer-container .contact div .phone .phone-icon {
-            height: 18px;
-            width: auto; }
-        footer .footer-container .contact div .facebook, footer .footer-container .contact div .twitter, footer .footer-container .contact div .instagram {
-          margin-left: 10px; }
-
-.footer-nav {
-  background-color: #e6e6e6; }
+          justify-content: space-between;
+          width: 60%;
+          flex-wrap: wrap; }
+          footer .footer-container .contact .follow-us .follow-row a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.6); }
+            footer .footer-container .contact .follow-us .follow-row a img {
+              height: 18px;
+              padding-right: 4px; }
+            footer .footer-container .contact .follow-us .follow-row a span {
+              padding-top: 4px; }
 
 /*# sourceMappingURL=styles.css.map */
