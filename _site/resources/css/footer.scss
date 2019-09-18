@@ -1,6 +1,5 @@
 footer {
     display: flex;
-    align-items: center;
 
     background-color: $footer-bgColor;
 
@@ -11,10 +10,10 @@ footer {
 
     .footer-container {
         height: 85%;
+        margin: auto;
 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-wrap: wrap;
 
         .info, .contact, .follow {
             display: flex;
@@ -24,6 +23,7 @@ footer {
         }
 
         .info {
+            flex: 1;
             margin-right: 40px;
 
             .logo-footer {
@@ -61,6 +61,7 @@ footer {
         }
 
         .contact {
+            flex: 1;
             border-left: 2px solid rgba(0, 0, 0, .1);
             display: flex;
 
