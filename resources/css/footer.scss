@@ -8,6 +8,8 @@ footer {
     font-size: 0.9em;
     color: $greyColor;
 
+    overflow: hidden;
+
     .footer-container {
         height: 85%;
         margin: auto;
@@ -49,8 +51,6 @@ footer {
                 box-shadow: 0px 5px 0px #de90fb;
 */
                 box-shadow: 0px 5px 0px $topHeader-color;
-                position: relative;
-                top: 0px;
 
                 &:hover {
                     background-color: $topHeader-color;
@@ -124,14 +124,6 @@ footer {
                 .facebook, .twitter, .instagram {
                     margin-left: 10px;
                 }
-            }
-
-            .lets-connect {
-                margin-bottom: 20px;
-            }
-
-            .follow-us {
-                margin-top: 20px;
             }
         }
     }

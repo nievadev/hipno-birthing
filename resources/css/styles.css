@@ -156,6 +156,13 @@ svg {
 
   .menu-btn {
     display: flex; } }
+/*
+@media only screen and (max-width: 746px) {
+    footer {
+        height:
+    }
+}
+*/
 @media only screen and (max-width: 682px) {
   .container-topHeader {
     width: 90%; } }
@@ -262,27 +269,16 @@ svg {
   cursor: pointer;
   color: #c8a2c8; }
 
-html, body {
-  width: 100%;
+html {
   height: 100%; }
 
 body {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto 1fr 270px 50px;
-  grid-template-areas: "header" "main" "footer" "footer-nav"; }
-
-header {
-  grid-area: header; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 main {
-  grid-area: main; }
-
-footer {
-  grid-area: footer; }
-
-.footer-nav {
-  grid-area: footer-nav; }
+  flex: 1; }
 
 .top-header {
   z-index: 30; }
@@ -294,14 +290,15 @@ footer {
   z-index: 20; }
 
 .dropdown-list {
-  z-index: 10; }
+  z-index: 100; }
 
 footer {
   display: flex;
   background-color: #f6e2fe;
   box-shadow: 0px -10px 5px #f6e2fe, 0px 3px 10px #919191;
   font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.6);
+  overflow: hidden; }
   footer .footer-container {
     height: 85%;
     margin: auto;
@@ -332,9 +329,7 @@ footer {
         /*
                         box-shadow: 0px 5px 0px #de90fb;
         */
-        box-shadow: 0px 5px 0px #e8b1fc;
-        position: relative;
-        top: 0px; }
+        box-shadow: 0px 5px 0px #e8b1fc; }
         footer .footer-container .info .benefits-btn:hover {
           background-color: #e8b1fc;
           box-shadow: 0px 0px 0px #de90fb;
@@ -381,10 +376,6 @@ footer {
             width: auto; }
         footer .footer-container .contact div .facebook, footer .footer-container .contact div .twitter, footer .footer-container .contact div .instagram {
           margin-left: 10px; }
-      footer .footer-container .contact .lets-connect {
-        margin-bottom: 20px; }
-      footer .footer-container .contact .follow-us {
-        margin-top: 20px; }
 
 .footer-nav {
   background-color: #e6e6e6; }

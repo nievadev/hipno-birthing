@@ -1,31 +1,14 @@
-html, body {
-    width: 100%;
+html {
     height: 100%;
 }
 
 body {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 1fr 270px 50px;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer"
-        "footer-nav";
-}
+    height: 100vh;
 
-header {
-    grid-area: header;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.footer-nav {
-    grid-area: footer-nav;
+    flex: 1;
 }
