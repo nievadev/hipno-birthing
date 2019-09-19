@@ -1,9 +1,13 @@
+header {
+    border-bottom: 5px solid $topHeader-color;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 40px 0px;
+    padding: 60px 0px 15px 0px;
 
     background-color: $header-bgColor;
 
@@ -60,6 +64,8 @@
             flex-wrap: wrap;
 
             li {
+                background-color: #ffffff;
+
                 ul {
                     display: flex;
                     flex-direction: column;
@@ -68,12 +74,19 @@
 
                     padding: 0;
 
-                }
+                    li {
+                        display: none;
+                        border-left: 2px solid rgba(0, 0, 0, .1);
+                        border-right: 2px solid rgba(0, 0, 0, .1);
+                    }
 
-                ul li {
-                    display: none;
-                }
+                    li:last-child {
+                        border-bottom: 2px solid rgba(0, 0, 0, .1);
+                        border-radius: 0px 0px 10px 10px;
+                    }
 
+                }
+                
                 a:visited, a:link {
                     padding: 10px 20px;
                     color: $navBar-color;

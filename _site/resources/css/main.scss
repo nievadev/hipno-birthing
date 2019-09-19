@@ -12,6 +12,8 @@ $container-width: 70%;
 
 $greyColor: rgba(0, 0, 0, .6);
 
+$mindColor: #cacafd;
+
 html {
     background-color: #ffffff;
     color: #000000;
@@ -56,8 +58,10 @@ svg {
 
 @import "top_header";
 @import "main_header";
-@import "media_queries";
 @import "sidenav";
+@import "main_message";
+@import "footer";
+
 @import "layout";
 @import "zindex";
-@import "footer";
+@import "media_queries";

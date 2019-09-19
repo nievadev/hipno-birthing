@@ -1,0 +1,18 @@
+.main-message {
+    height: 350px;
+    background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), $footer-bgColor url(css-images/baby_sized.jpg) center -250px no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid $topHeader-color;
+    display: flex;
+
+    .message {
+        margin: auto;
+        font-size: 2em;
+        font-weight: 100;
+        color: #ededed;
+        border: 2px solid #ffffff;
+        border-radius: 100px;
+        padding: 40px 70px;
+        background-color: rgba(255, 255, 255, .3);
+    }
+}
