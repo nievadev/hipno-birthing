@@ -1,3 +1,5 @@
+/* Max width */
+
 @media only screen and (max-width: 8000px) {
     .phone {
         display: flex;
@@ -61,6 +63,12 @@
     }
 }
 
+@media only screen and (max-width: 946px) {
+    .message {
+        transform: scale(0.7);
+    }
+}
+
 @media only screen and (max-width: 892px) {
     .footer-container {
         flex-direction: column;
@@ -83,6 +91,12 @@
 @media only screen and (max-width: 682px) {
     .container-topHeader {
         width: 90%;
+    }
+
+    .message {
+        max-width: 300px;
+        min-width: 276px;
+        white-space: normal !important;
     }
 }
 
@@ -148,17 +162,7 @@
     }
 }
 
-@media only screen and (max-width: 382px) {
-    .sidenav li a, .dropdown-btn {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 382px) {
-    .sidenav li a, .dropdown-btn {
-        font-size: 1.2em;
-    }
-}
+/* Min width */
 
 @media only screen and (min-width: 533px) {
     .email {
