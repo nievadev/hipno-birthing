@@ -53,6 +53,12 @@
     }
 }
 
+@media only screen and (max-width: 1330px) {
+    .terms {
+        width: 80%;
+    }
+}
+
 @media only screen and (max-width: 1056px) {
     .main-header nav ul {
         display: none;

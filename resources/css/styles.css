@@ -30,6 +30,13 @@ svg {
 .indent {
   text-indent: 40px; }
 
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -50px; }
+  100% {
+    opacity: 1;
+    margin-left: 0px; } }
 .top-header {
   height: 30px;
   width: 100%;
@@ -317,13 +324,49 @@ footer {
             footer .footer-container .contact .follow-us .follow-row a span {
               padding-top: 4px; }
 
+.terms {
+  width: 50%;
+  margin: 0 auto; }
+  .terms .terms-of-service-title {
+    font-size: 1.9em;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0px; }
+  .terms details {
+    margin: 15px 0px;
+    overflow: hidden; }
+    .terms details .collapser {
+      display: block;
+      background-color: #f6e2fe;
+      padding: 5px 20px;
+      border-radius: 10px; }
+    .terms details .collapser:after {
+      content: "\02795";
+      font-size: 0.7em;
+      color: white;
+      float: right;
+      margin-left: 5px;
+      margin-top: 5px; }
+    .terms details .active:after {
+      content: "\2796"; }
+    .terms details .collapser ~ p {
+      display: block; }
+    .terms details .collapser:hover {
+      cursor: pointer;
+      text-decoration: underline; }
+    .terms details .content {
+      margin: 10px 0px; }
+  .terms details[open] .collapser ~ .content {
+    animation: sweep 0.5s ease; }
+
 body {
   height: 100vh;
   display: flex;
   flex-direction: column; }
 
 main {
-  flex: 1; }
+  flex: 1;
+  margin: 40px auto !important; }
 
 .top-header {
   z-index: 100; }
@@ -372,6 +415,9 @@ footer {
 
   .footer-container {
     margin-top: 0px !important; } }
+@media only screen and (max-width: 1330px) {
+  .terms {
+    width: 80%; } }
 @media only screen and (max-width: 1056px) {
   .main-header nav ul {
     display: none; }

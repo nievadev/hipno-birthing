@@ -75,3 +75,13 @@ function disappear(x)
 var x = window.matchMedia("(min-width: 533px)");
 disappear(x);
 x.addListener(disappear);
+
+var buttons = document.getElementsByClassName("collapser");
+
+for (i = 0; i < buttons.length; i++)
+{
+    buttons[i].addEventListener("click", function()
+    {
+        this.classList.toggle("active");
+    });
+}

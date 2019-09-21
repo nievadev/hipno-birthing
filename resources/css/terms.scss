@@ -1,0 +1,54 @@
+.terms {
+    width: 50%;
+    margin: 0 auto;
+
+    .terms-of-service-title {
+        font-size: 1.9em;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    details {
+        margin: 15px 0px;
+
+        .collapser {
+            display: block;
+            background-color: $footer-bgColor;
+            padding: 5px 20px;
+            border-radius: 10px;
+        }
+
+        .collapser:after {
+            content: "\02795";
+            font-size: 0.7em;
+            color: white;
+            float: right;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        
+        .active:after {
+            content: "\2796";
+        }
+
+        .collapser ~ p {
+            display: block;
+        }
+
+        .collapser:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .content {
+            margin: 10px 0px;
+        }
+
+        overflow: hidden;
+    }
+
+    details[open] .collapser ~ .content {
+        animation: sweep 0.5s ease;
+    }
+}

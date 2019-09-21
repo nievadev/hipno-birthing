@@ -56,11 +56,14 @@ svg {
     text-indent: 40px;
 }
 
+@import "animation";
+
 @import "top_header";
 @import "main_header";
 @import "sidenav";
 @import "main_message";
 @import "footer";
+@import "terms";
 
 @import "layout";
 @import "zindex";
