@@ -27,6 +27,10 @@
             margin-left: 5px;
             margin-top: 5px;
         }
+
+        .collapser::-webkit-details-marker {
+            display: none;
+        }
         
         .active:after {
             content: "\2796";

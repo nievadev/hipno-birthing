@@ -347,13 +347,16 @@ footer {
       float: right;
       margin-left: 5px;
       margin-top: 5px; }
+    .terms details .collapser::-webkit-details-marker {
+      display: none; }
     .terms details .active:after {
       content: "\2796"; }
     .terms details .collapser ~ p {
       display: block; }
     .terms details .collapser:hover {
       cursor: pointer;
-      text-decoration: underline; }
+      text-decoration: underline;
+      -webkit-text-decoration: underline; }
     .terms details .content {
       margin: 10px 0px; }
   .terms details[open] .collapser ~ .content {
