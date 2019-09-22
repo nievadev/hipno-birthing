@@ -1,8 +1,9 @@
 markdown: redcarpet
 livereload: true
-baseurl: /hypnobirthing
+baseurl: /hypnobirthingmind
 exclude: [
     "changes",
     "hypnobirthing",
     "files/"
 ]
+permalink: pretty
