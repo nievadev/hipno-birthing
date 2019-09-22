@@ -208,7 +208,7 @@ header {
   color: #c8a2c8; }
 
 .main-message {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #f6e2fe url(css-images/baby_sized.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #f6e2fe url(css-images/baby_belly.jpg) center center no-repeat;
   background-size: cover;
   border-bottom: 5px solid #e8b1fc;
   display: flex;
@@ -224,7 +224,6 @@ header {
     border: 2px solid #ffffff;
     border-radius: 100px;
     padding: 40px 70px;
-    background-color: rgba(255, 255, 255, 0.3);
     white-space: nowrap; }
 
 footer {
@@ -343,7 +342,6 @@ footer {
     .terms details .collapser:after {
       content: "\02795";
       font-size: 0.7em;
-      color: white;
       float: right;
       margin-left: 5px;
       margin-top: 5px; }
@@ -355,8 +353,7 @@ footer {
       display: block; }
     .terms details .collapser:hover {
       cursor: pointer;
-      text-decoration: underline;
-      -webkit-text-decoration: underline; }
+      text-decoration: underline; }
     .terms details .content {
       margin: 10px 0px; }
   .terms details[open] .collapser ~ .content {
@@ -452,6 +449,9 @@ footer {
     min-width: 276px;
     white-space: normal !important; } }
 @media only screen and (max-width: 533px) {
+  .terms-of-service-title {
+    font-size: 1.5em !important; } }
+@media only screen and (max-width: 533px) {
   .info {
     display: none !important; }
 
@@ -497,6 +497,9 @@ footer {
 
   .follow-row {
     flex-direction: column; } }
+@media only screen and (max-width: 344px) {
+  .terms-of-service-title {
+    font-size: 1.3em !important; } }
 /* Min width */
 @media only screen and (min-width: 533px) {
   .email {
