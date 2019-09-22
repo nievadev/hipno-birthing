@@ -102,7 +102,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0px 15px 0px;
+  padding: 50px 0px 15px 0px;
   background-color: #ffffff; }
   .main-header .logo {
     display: flex;
