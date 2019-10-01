@@ -73,17 +73,18 @@ footer {
                     display: flex;
                     flex-direction: column;
 
-                    a {
-                        display: flex;
+                    .footer-email {
+                        display: block;
                         color: $greyColor;
 
-                        img {
+                        .footer-email-icon {
                             height: 18px;
                             padding-right: 4px;
                             padding-top: 4px;
+                            float: left;
                         }
 
-                        margin: 0 0 5px 0;
+                        margin-bottom: 5px;
                     }
 
                     span {

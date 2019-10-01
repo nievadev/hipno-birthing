@@ -280,14 +280,15 @@ footer {
         footer .footer-container .contact .lets-connect .connect-row {
           display: flex;
           flex-direction: column; }
-          footer .footer-container .contact .lets-connect .connect-row a {
-            display: flex;
+          footer .footer-container .contact .lets-connect .connect-row .footer-email {
+            display: block;
             color: rgba(0, 0, 0, 0.6);
-            margin: 0 0 5px 0; }
-            footer .footer-container .contact .lets-connect .connect-row a img {
+            margin-bottom: 5px; }
+            footer .footer-container .contact .lets-connect .connect-row .footer-email .footer-email-icon {
               height: 18px;
               padding-right: 4px;
-              padding-top: 4px; }
+              padding-top: 4px;
+              float: left; }
           footer .footer-container .contact .lets-connect .connect-row span {
             display: flex;
             margin: 0; }
