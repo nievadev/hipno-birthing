@@ -87,14 +87,19 @@ footer {
                         margin-bottom: 5px;
                     }
 
-                    span {
-                        display: flex;
+                    .footer-phone {
+                        display: block;
                         margin: 0;
 
-                        img {
+                        .footer-phone-icon {
                             height: 18px;
                             padding-top: 4px;
                             padding-right: 4px;
+                            float: left;
+                        }
+
+                        .footer-phone-info {
+                            color: $greyColor;
                         }
                     }
                 }

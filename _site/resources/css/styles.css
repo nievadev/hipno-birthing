@@ -289,13 +289,16 @@ footer {
               padding-right: 4px;
               padding-top: 4px;
               float: left; }
-          footer .footer-container .contact .lets-connect .connect-row span {
-            display: flex;
+          footer .footer-container .contact .lets-connect .connect-row .footer-phone {
+            display: block;
             margin: 0; }
-            footer .footer-container .contact .lets-connect .connect-row span img {
+            footer .footer-container .contact .lets-connect .connect-row .footer-phone .footer-phone-icon {
               height: 18px;
               padding-top: 4px;
-              padding-right: 4px; }
+              padding-right: 4px;
+              float: left; }
+            footer .footer-container .contact .lets-connect .connect-row .footer-phone .footer-phone-info {
+              color: rgba(0, 0, 0, 0.6); }
       footer .footer-container .contact .follow-us {
         flex: 1;
         display: flex;
